@@ -62,7 +62,7 @@ h6,
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 140px;
 }
 
 @media (max-width: 768px) {
@@ -414,9 +414,9 @@ h6,
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
-  background: url("../img/hero-bg.jpg") center center;
-  background-size: cover;
+  height: 20vh;
+  background: url("../img/encabezado.jpg") center center;
+  background-size:cover;
   position: relative;
   margin-top: -80px;
   z-index: 9;
@@ -430,7 +430,7 @@ h6,
   right: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:center;
   flex-direction: column;
   text-align: center;
   padding: 0 15px;
@@ -536,6 +536,29 @@ h6,
 }
 
 @media (max-width: 768px) {
+  #hero {
+    width: 100%;
+    height: 30vh;
+   background: url("../img/portadawebprofe1.png") center center;
+   background-size: 80%;
+   position: relative;
+   margin-top: -80px;
+   z-index: 9;
+  }
+
+  #hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+  }
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
