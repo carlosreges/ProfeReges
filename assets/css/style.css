@@ -1,11 +1,3 @@
-/**
-* Template Name: Siimple
-* Updated: Mar 09 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/free-bootstrap-landing-page/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -62,7 +54,7 @@ h6,
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 140px;
+  max-height:150px;
 }
 
 @media (max-width: 768px) {
@@ -414,8 +406,8 @@ h6,
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 20vh;
-  background: url("../img/encabezado.jpg") center center;
+  height: 60vh;
+  background: url("../img/hero-bg.jpg") center center;
   background-size:cover;
   position: relative;
   margin-top: -80px;
@@ -437,12 +429,13 @@ h6,
 }
 
 #hero h1 {
+  font-family: "Salsa", sans-serif;
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 400;
   line-height: 56px;
   line-height: 56px;
-  color: #222;
+  color: #d7dfbb;
 }
 
 #hero h2 {
