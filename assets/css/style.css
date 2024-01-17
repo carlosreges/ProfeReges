@@ -62,10 +62,14 @@ h6,
     font-size: 28px;
     padding: 8px 0;
   }
+
+  #header .logo img {
+    display:none;
+  }
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu
+# Menú de navegación
 --------------------------------------------------------------*/
 .nav-menu {
   position: fixed;
@@ -162,10 +166,10 @@ h6,
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu
+# Menú de navegación
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation
+* Navegación Desktop 
 */
 .navbar {
   padding: 0;
@@ -293,7 +297,7 @@ h6,
 }
 
 /**
-* Mobile Navigation
+* Navegación responsiva
 */
 .mobile-nav-toggle {
   color: #743e1d;
@@ -402,7 +406,7 @@ h6,
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Sección Hero 
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
@@ -503,7 +507,7 @@ h6,
   margin: 0 8px;
 }
 
-#hero .php-email-form button[type=submit] {
+#hero .btn {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -531,29 +535,29 @@ h6,
 @media (max-width: 768px) {
   #hero {
     width: 100%;
-    height: 30vh;
+    height: 36vh;
    background: url("../img/portadawebprofe1.png") center center;
-   background-size: 80%;
+   background-size: 100%;
    position: relative;
    margin-top: -80px;
    z-index: 9;
   }
 
   #hero .hero-container {
-    position: absolute;
-    bottom: 0;
-    top: 0;
+    position:relative;
+    bottom: 50px;
+    top: 0px;
     left: 0;
     right: 0;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items:center;
     flex-direction: column;
-    text-align: center;
-    padding: 0 15px;
+    text-align:center;
+    padding: 40px 0 80px;
   }
   #hero h1 {
-    font-size: 28px;
+    font-size: 20px;
     line-height: 36px;
   }
 
@@ -565,6 +569,21 @@ h6,
 
   #hero .php-email-form input {
     margin: 0 auto;
+  }
+
+  #hero .btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: none;
+    color: #fff;
+    background: #0158a0;
   }
 }
 
