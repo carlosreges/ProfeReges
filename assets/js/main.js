@@ -70,3 +70,27 @@
   }, true)
 
 })()
+
+  /**
+   * Email.js
+   */
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_mw0ae7j';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Mensaje enviado con éxito';
+      alert('Mensaje enviado. ¡Muchas gracias por escribirnos!');
+    }, (err) => {
+      btn.value = 'Error al enviar mensaje';
+      alert(JSON.stringify(err));
+    });
+});

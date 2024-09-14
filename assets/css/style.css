@@ -873,7 +873,7 @@ section {
   border-color: #fd680e;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form input[type=submit] {
   background: #fd680e;
   border: 0;
   padding: 10px 24px;
@@ -881,7 +881,7 @@ section {
   transition: 0.4s;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form input[type=submit]:hover {
   background: #fd8841;
 }
 
