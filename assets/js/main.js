@@ -5,7 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -37,7 +37,7 @@
   /**
    * Mobile nav toggle
    */
-  const toogleNav = function() {
+  const toogleNav = function () {
     let navButton = select('.nav-toggle')
     navButton.classList.toggle('nav-toggle-active')
     navButton.querySelector('i').classList.toggle('bx-x')
@@ -45,14 +45,14 @@
 
     select('.nav-menu').classList.toggle('nav-menu-active')
   }
-  on('click', '.nav-toggle', function(e) {
+  on('click', '.nav-toggle', function (e) {
     toogleNav();
   })
 
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.nav-menu .drop-down > a', function(e) {
+  on('click', '.nav-menu .drop-down > a', function (e) {
     e.preventDefault()
     this.nextElementSibling.classList.toggle('drop-down-active')
     this.parentElement.classList.toggle('active')
@@ -61,7 +61,7 @@
   /**
    * Scrool links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       select('.nav-menu .active').classList.remove('active')
       this.parentElement.classList.toggle('active')
@@ -71,26 +71,26 @@
 
 })()
 
-  /**
-   * Email.js
-   */
+/**
+ * Email.js
+ */
 const btn = document.getElementById('button');
 
 document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+  .addEventListener('submit', function (event) {
+    event.preventDefault();
 
-   btn.value = 'Enviando...';
+    btn.value = 'Enviando...';
 
-   const serviceID = 'default_service';
-   const templateID = 'template_mw0ae7j';
+    const serviceID = 'service_7eueo5u';
+    const templateID = 'template_mw0ae7j';
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Mensaje enviado con éxito';
-      alert('Mensaje enviado. ¡Muchas gracias por escribirnos!');
-    }, (err) => {
-      btn.value = 'Error al enviar mensaje';
-      alert(JSON.stringify(err));
-    });
-});
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.value = 'Mensaje enviado con éxito';
+        alert('Mensaje enviado. ¡Muchas gracias por escribirnos!');
+      }, (err) => {
+        btn.value = 'Error al enviar mensaje';
+        alert(JSON.stringify(err));
+      });
+  });
