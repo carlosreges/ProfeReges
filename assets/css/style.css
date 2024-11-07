@@ -54,7 +54,8 @@ h6,
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height:150px;
+  max-height: 70px;
+  width: auto;
 }
 
 @media (max-width: 768px) {
