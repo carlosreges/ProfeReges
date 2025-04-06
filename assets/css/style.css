@@ -4,7 +4,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-}
+} 
 
 a {
   text-decoration: none;
@@ -926,16 +926,118 @@ section {
 /*--------------------------------------------------------------
 # Botón whatsapp
 --------------------------------------------------------------*/
-.float-wa{
-  position:fixed;
-  width:60px;
-  height:60px;
-  bottom:40px;
-  right:40px;
-  background-color:#25d366;
-  color:#FFF;
-  border-radius:50px;
-  text-align:center;
-  font-size:30px;
-  z-index:100;
+.float-wa {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  animation: pulse 2s infinite;
+  transition: all 0.3s;
+}
+
+.float-wa:hover {
+  background-color: #128C7E;
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Añadir al final de tu archivo CSS */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mejoras para botones */
+.btn-primary, .btn-success {
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover, .btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mejorar tarjetas de servicios */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Mejorar la sección de preguntas frecuentes */
+.faq-list li {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-list a {
+  padding: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.faq-list a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Optimizaciones responsivas */
+@media (max-width: 768px) {
+  .hero-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .section-title h2 {
+    font-size: 28px;
+  }
+  
+  .float-wa {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+}
+
+/* Para móviles muy pequeños */
+@media (max-width: 375px) {
+  .hero-container h1 {
+    font-size: 1.5rem;
+  }
+  
+  .social-links a {
+    margin: 0 5px;
+  }
 }

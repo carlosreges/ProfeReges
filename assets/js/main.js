@@ -8,7 +8,7 @@
 (function () {
   "use strict";
 
-  /**
+  /** 
    * Easy selector helper function
    */
   const select = (el, all = false) => {
@@ -69,28 +69,61 @@
     }
   }, true)
 
+  // Manejar envío del formulario sin redirección
+  document.getElementById('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const form = this;
+    const button = document.getElementById('button');
+    const originalText = button.textContent;
+    
+    // Cambiar estado del botón
+    button.disabled = true;
+    button.textContent = 'Enviando...';
+    
+    // Crear objeto FormData con los datos del formulario
+    const formData = new FormData(form);
+    
+    // Enviar datos mediante fetch
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Éxito
+      button.textContent = '¡Mensaje Enviado!';
+      button.classList.remove('btn-success');
+      button.classList.add('btn-info');
+      form.reset();
+      
+      // Restaurar botón después de 3 segundos
+      setTimeout(() => {
+        button.textContent = originalText;
+        button.disabled = false;
+        button.classList.remove('btn-info');
+        button.classList.add('btn-success');
+      }, 3000);
+    })
+    .catch(error => {
+      // Error
+      button.textContent = 'Error al enviar';
+      button.classList.remove('btn-success');
+      button.classList.add('btn-danger');
+      
+      // Restaurar botón después de 3 segundos
+      setTimeout(() => {
+        button.textContent = originalText;
+        button.disabled = false;
+        button.classList.remove('btn-danger');
+        button.classList.add('btn-success');
+      }, 3000);
+    });
+  });
+
 })()
 
-/**
- * Email.js
- */
-const btn = document.getElementById('button');
 
-document.getElementById('form')
-  .addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    btn.value = 'Enviando...';
-
-    const serviceID = 'service_7eueo5u';
-    const templateID = 'service_bwsvacl';
-
-    emailjs.sendForm(serviceID, templateID, this)
-      .then(() => {
-        btn.value = 'Mensaje enviado con éxito';
-        alert('Mensaje enviado. ¡Muchas gracias por escribirnos!');
-      }, (err) => {
-        btn.value = 'Error al enviar mensaje';
-        alert(JSON.stringify(err));
-      });
-  });
