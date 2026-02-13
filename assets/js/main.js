@@ -99,13 +99,19 @@
       button.classList.remove('btn-success');
       button.classList.add('btn-info');
       form.reset();
+
+      const formMessage = document.getElementById('form-message');
+      formMessage.innerHTML = '<div class="alert alert-success" role="alert">¡Tu mensaje ha sido enviado con éxito!</div>';
+      formMessage.style.display = 'block';
       
-      // Restaurar botón después de 3 segundos
+      // Restaurar botón y ocultar mensaje después de 3 segundos
       setTimeout(() => {
         button.textContent = originalText;
         button.disabled = false;
         button.classList.remove('btn-info');
         button.classList.add('btn-success');
+        formMessage.style.display = 'none';
+        formMessage.innerHTML = '';
       }, 3000);
     })
     .catch(error => {
@@ -113,13 +119,19 @@
       button.textContent = 'Error al enviar';
       button.classList.remove('btn-success');
       button.classList.add('btn-danger');
+
+      const formMessage = document.getElementById('form-message');
+      formMessage.innerHTML = '<div class="alert alert-danger" role="alert">¡Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo!</div>';
+      formMessage.style.display = 'block';
       
-      // Restaurar botón después de 3 segundos
+      // Restaurar botón y ocultar mensaje después de 3 segundos
       setTimeout(() => {
         button.textContent = originalText;
         button.disabled = false;
         button.classList.remove('btn-danger');
         button.classList.add('btn-success');
+        formMessage.style.display = 'none';
+        formMessage.innerHTML = '';
       }, 3000);
     });
   });
