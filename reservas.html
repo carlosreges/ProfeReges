@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Reserva tu Clase - Prof. Carlos Reges</title>
+  <meta name="description" content="Agenda tu clase de apoyo escolar de forma fácil y rápida. Elige el día y horario que mejor te convenga.">
+
+  <!-- SEO Meta Tags -->
+  <meta name="author" content="Prof. Carlos Reges">
+  <link rel="canonical" href="https://www.carlosreges.com.ar/reservas.html">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/favicon.ico" rel="apple-touch-icon">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i|Salsa:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container-fluid">
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logoCR.png" alt="logo" class="img-fluid"></a>
+      </div>
+      <button type="button" class="nav-toggle"><i class="bx bx-menu"></i></button>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html#header">Principal</a></li>
+          <li><a href="index.html#about">Sobre mí</a></li>
+          <li><a href="index.html#why-us">¿Qué hago y cómo?</a></li>
+          <li><a href="blog.html">Blog del profesor</a></li>
+          <li><a href="clases.html">Material de Estudio</a></li>
+          <li class="active"><a href="reservas.html">Reservar Clase</a></li>
+          <li><a href="index.html#contact"><b>Contáctame</b></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="reservas-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Reserva tu Clase</h2>
+          <p>Elige el horario que mejor te convenga y asegura tu lugar.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="booking-card">
+              <form id="booking-form">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="name" required placeholder="Tu nombre">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required placeholder="tu@email.com">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="subject" class="form-label">Asignatura</label>
+                    <select class="form-select" id="subject" required>
+                      <option value="" selected disabled>Selecciona una materia</option>
+                      <option value="latin">Latín</option>
+                      <option value="matematica">Matemáticas</option>
+                      <option value="lengua">Lengua y Literatura</option>
+                      <option value="ingles">Inglés</option>
+                      <option value="ingreso">Ingreso (Monserrat/Belgrano)</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="day" class="form-label">Día de la Semana</label>
+                    <select class="form-select" id="day" required>
+                      <option value="" selected disabled>Selecciona un día</option>
+                      <option value="Lunes">Lunes</option>
+                      <option value="Martes">Martes</option>
+                      <option value="Miércoles">Miércoles</option>
+                      <option value="Jueves">Jueves</option>
+                      <option value="Viernes">Viernes</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Horarios Disponibles (Puedes elegir hasta 3 horas seguidas)</label>
+                  <div class="d-flex flex-wrap gap-2" id="time-slots">
+                    <!-- Horarios se cargarán dinámicamente -->
+                    <div class="alert alert-info w-100">Selecciona un día para ver horarios disponibles.</div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="comments" class="form-label">Comentarios adicionales</label>
+                  <textarea class="form-control" id="comments" rows="3" placeholder="Cuéntame un poco sobre lo que necesitas reforzar..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-reserve w-100">Confirmar Reserva</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="credits">
+        Diseñado por <a href="https://www.carlosreges.com.ar/">Carlos Reges</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.link/d6pmno/" class="float-wa" target="_blank">
+    <i class="fa-brands fa-whatsapp" style="margin-top:16px;"></i>
+  </a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    const daySelect = document.getElementById('day');
+    const timeSlotsContainer = document.getElementById('time-slots');
+    const bookingForm = document.getElementById('booking-form');
+
+    // Función para cargar horarios disponibles desde el servidor
+    async function loadAvailability() {
+      const selectedDay = daySelect.value;
+      if (!selectedDay) return;
+
+      timeSlotsContainer.innerHTML = '<div class="spinner-border text-primary" role="status"><span class="visually-hidden">Cargando...</span></div>';
+
+      try {
+        const response = await fetch('/api/reservas');
+        const reservas = await response.json();
+        
+        // Horarios solicitados: 9:00 a 12:00 y 15:00 a 18:00
+        const allTimes = ['09:00', '10:00', '11:00', '12:00', '15:00', '16:00', '17:00', '18:00'];
+        
+        // Filtrar horarios que ya tienen 6 alumnos para ese día
+        const timeCounts = reservas
+          .filter(r => r.day === selectedDay)
+          .reduce((acc, r) => {
+            acc[r.time] = (acc[r.time] || 0) + 1;
+            return acc;
+          }, {});
+
+        timeSlotsContainer.innerHTML = '';
+        
+        allTimes.forEach(time => {
+          const count = timeCounts[time] || 0;
+          const isFull = count >= 6;
+          const btn = document.createElement('div');
+          btn.className = 'time-option';
+          btn.innerHTML = `
+            <input type="checkbox" class="btn-check" name="time" id="time-${time}" value="${time}" ${isFull ? 'disabled' : ''}>
+            <label class="btn ${isFull ? 'btn-outline-secondary' : 'btn-outline-primary'}" for="time-${time}">
+              ${time} ${isFull ? '(Completo)' : `(${6 - count} libres)`}
+            </label>
+          `;
+          timeSlotsContainer.appendChild(btn);
+        });
+
+        // Limitar a máximo 3 horas
+        const checkboxes = document.querySelectorAll('input[name="time"]');
+        checkboxes.forEach(cb => {
+            cb.addEventListener('change', () => {
+                const checked = document.querySelectorAll('input[name="time"]:checked');
+                if (checked.length > 3) {
+                    cb.checked = false;
+                    alert('Solo puedes seleccionar hasta 3 horas.');
+                }
+            });
+        });
+
+        // Mostrar mensaje inicial si no hay día seleccionado
+        if (!selectedDay) {
+            timeSlotsContainer.innerHTML = '<div class="alert alert-info w-100">Selecciona un día para ver horarios disponibles.</div>';
+            return;
+        }
+
+        if (allTimes.every(t => (timeCounts[t] || 0) >= 6)) {
+            timeSlotsContainer.innerHTML = '<div class="alert alert-warning w-100">No hay horarios disponibles para este día.</div>';
+        }
+
+      } catch (error) {
+        console.error('Error al cargar disponibilidad:', error);
+        timeSlotsContainer.innerHTML = '<div class="alert alert-danger w-100">Error al conectar con el servidor.</div>';
+      }
+    }
+
+    daySelect.addEventListener('change', loadAvailability);
+
+    bookingForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const selectedTimes = Array.from(document.querySelectorAll('input[name="time"]:checked')).map(cb => cb.value);
+      
+      if (selectedTimes.length === 0) {
+        alert('Por favor selecciona al menos un horario.');
+        return;
+      }
+
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        day: document.getElementById('day').value,
+        times: selectedTimes,
+        comments: document.getElementById('comments').value
+      };
+
+      try {
+        const response = await fetch('/api/reservas', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          alert('¡Reserva confirmada con éxito! Te esperamos.');
+          bookingForm.reset();
+          timeSlotsContainer.innerHTML = '<div class="alert alert-info w-100">Selecciona una fecha para ver horarios disponibles.</div>';
+        } else {
+          alert('Error: ' + result.error);
+        }
+      } catch (error) {
+        console.error('Error al enviar reserva:', error);
+        alert('Hubo un error al procesar tu reserva. Por favor intenta de nuevo.');
+      }
+    });
+  </script>
+
+</body>
+</html>

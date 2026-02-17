@@ -6,8 +6,17 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Material de Estudio - Prof. Carlos Reges</title>
-  <meta name="description" content="Material de apoyo y recursos educativos para las clases del Profesor Carlos Reges. Accede a documentos, ejercicios y más para Latín, Matemáticas, Lengua y otras asignaturas.">
-  <meta name="keywords" content="material de estudio, recursos educativos, latín, matemáticas, lengua, apoyo escolar, profesor particular">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Material de estudio y recursos educativos exclusivos del Prof. Carlos Reges. Guías de Latín, Matemáticas, Tecnología y más para apoyo escolar en Córdoba.">
+  <meta name="author" content="Prof. Carlos Reges">
+  <link rel="canonical" href="https://www.carlosreges.com.ar/clases.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.carlosreges.com.ar/clases.html">
+  <meta property="og:title" content="Material de Estudio - Prof. Carlos Reges">
+  <meta property="og:description" content="Accede a recursos educativos exclusivos: guías de estudio, ejercicios y material de apoyo para todos los niveles.">
+  <meta property="og:image" content="https://www.carlosreges.com.ar/assets/img/logoCR.png">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.ico" rel="icon">
@@ -51,7 +60,8 @@
           <li><a href="index.html#about" class="scrollto">Sobre mí</a></li>
           <li><a href="index.html#why-us" class="scrollto">¿Qué hago y cómo?</a></li>
           <li><a href="blog.html" class="scrollto">Blog del profesor</a></li>
-          <li class="active"><a href="clases.html">Material de Estudio</a></li>
+          <li><a href="clases.html" class="scrollto">Material de Estudio</a></li>
+          <li><a href="reservas.html">Reservar Clase</a></li>
           <li><a href="index.html#contact" class="scrollto">Formulario de contacto</a></li>
           <li><a href="index.html#contact" class="scrollto"><b>Contáctame</b></a></li>
         </ul>
@@ -61,8 +71,29 @@
 
   <main id="main">
 
+    <!-- ======= Password Protection ======= -->
+    <section id="password-gate" class="material-estudio">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contenido Exclusivo</h2>
+          <p>Para acceder al material de estudio, por favor ingresa la contraseña proporcionada por el profesor.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="card p-4">
+              <div class="form-group mb-3">
+                <input type="password" id="clases-password" class="form-control" placeholder="Ingresa la contraseña">
+              </div>
+              <button onclick="checkPassword()" class="btn btn-primary w-100">Acceder al material</button>
+              <div id="password-error" class="text-danger mt-2 text-center" style="display:none;">Contraseña incorrecta. Inténtalo de nuevo.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ======= Material de Estudio Section ======= -->
-    <section id="material-estudio" class="material-estudio">
+    <section id="material-estudio" class="material-estudio" style="display:none;">
       <div class="container">
         <div class="section-title">
           <h2>Tu Biblioteca de Conocimiento</h2>
@@ -154,6 +185,36 @@
 
         </div>
 
+        <!-- ======= Videos de Apoyo Section ======= -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <h3 class="video-section-title">Clases en Video</h3>
+            <p class="text-center mb-5">Refuerza lo aprendido con mis explicaciones paso a paso en YouTube.</p>
+          </div>
+          
+          <!-- Video 1 -->
+          <div class="col-lg-6 mb-4">
+            <div class="card p-3">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <h5 class="card-title text-center mt-3">Técnicas de Estudio Efectivas</h5>
+              <p class="card-text text-center small">Consejos prácticos para organizar tu tiempo de estudio.</p>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="col-lg-6 mb-4">
+            <div class="card p-3">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <h5 class="card-title text-center mt-3">Introducción al Latín</h5>
+              <p class="card-text text-center small">Primeros pasos en el mundo de la lengua madre.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section><!-- End Material de Estudio Section -->
 
@@ -175,6 +236,27 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    function checkPassword() {
+      const password = document.getElementById('clases-password').value;
+      // Nota: Esta es una protección básica a nivel de frontend. 
+      // Para una seguridad real, se requeriría un backend.
+      if (password === 'buho2026') {
+        document.getElementById('password-gate').style.display = 'none';
+        document.getElementById('material-estudio').style.display = 'block';
+      } else {
+        document.getElementById('password-error').style.display = 'block';
+      }
+    }
+    
+    // Permitir presionar Enter
+    document.getElementById('clases-password')?.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+            checkPassword();
+        }
+    });
+  </script>
 
 </body>
 
