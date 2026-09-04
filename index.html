@@ -410,13 +410,13 @@
             <div class="info">
               <div class="email">
                 <i class="bx bx-envelope"></i>
-                <a href="mailto:profereges@gmail.com" target="_blank">
+                <a href="mailto:info@profereges.com.ar" target="_blank">
                   <p>Cliquea aquí para enviar un e-mail.</p>
                 </a>
               </div>
               <div class="phone">
                 <i class="bx bx-phone-call"></i>
-                <a href="tel:+5493513400891" target="_blank">
+                <a id="phone-link" href="#">
                   <p>Cliquea aquí para llamarme por teléfono.</p>
                 </a>
               </div>
@@ -492,6 +492,12 @@
     // Ejecutar inmediatamente y también al cargar el DOM
     actualizarFecha();
     document.addEventListener('DOMContentLoaded', actualizarFecha);
+
+    const phoneLink = document.getElementById('phone-link');
+    if (phoneLink) {
+      const phoneNumber = String.fromCharCode(43, 53, 52, 57, 51, 53, 49, 51, 52, 48, 48, 56, 57, 49);
+      phoneLink.href = 'tel:' + phoneNumber;
+    }
   </script>
 </body>
 
