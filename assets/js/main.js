@@ -70,7 +70,12 @@
   }, true)
 
   // Manejar envío del formulario sin redirección
-  document.getElementById('form').addEventListener('submit', function(e) {
+  const contactForm = document.getElementById('form');
+  if (!contactForm) {
+    return;
+  }
+
+  contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
     
     const form = this;
