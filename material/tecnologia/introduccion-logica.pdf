@@ -1,0 +1,37 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 472 >>
+stream
+BT /F1 18 Tf 60 735 Td (Introduccion a la logica) Tj ET
+BT /F1 13 Tf 60 697 Td (Proposiciones y conectores) Tj ET
+BT /F1 11 Tf 60 659 Td (Una proposicion puede ser verdadera o falsa, pero no ambas a la vez.) Tj ET
+BT /F1 11 Tf 60 621 Td (Los conectores principales son y, o, no y si... entonces.) Tj ET
+BT /F1 11 Tf 60 583 Td (Practica: construye una tabla de verdad para p y q.) Tj ET
+BT /F1 11 Tf 60 545 Td (Usa ejemplos cotidianos para comprobar cada resultado.) Tj ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+5 0 obj
+<< /Type /Catalog /Pages 4 0 R >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000000601 00000 n 
+0000000727 00000 n 
+0000000784 00000 n 
+trailer
+<< /Size 6 /Root 5 0 R >>
+startxref
+833
+%%EOF

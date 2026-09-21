@@ -1,0 +1,37 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 434 >>
+stream
+BT /F1 18 Tf 60 735 Td (Conceptos de geometria) Tj ET
+BT /F1 13 Tf 60 697 Td (Figuras y medidas) Tj ET
+BT /F1 11 Tf 60 659 Td (Perimetro: suma de todos los lados de una figura.) Tj ET
+BT /F1 11 Tf 60 621 Td (Area del rectangulo: base por altura.) Tj ET
+BT /F1 11 Tf 60 583 Td (Area del triangulo: base por altura dividido por dos.) Tj ET
+BT /F1 11 Tf 60 545 Td (Dibuja cada figura, anota sus datos y expresa siempre la unidad.) Tj ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+5 0 obj
+<< /Type /Catalog /Pages 4 0 R >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000000563 00000 n 
+0000000689 00000 n 
+0000000746 00000 n 
+trailer
+<< /Size 6 /Root 5 0 R >>
+startxref
+795
+%%EOF

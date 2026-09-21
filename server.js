@@ -11,8 +11,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '/')));
 
-// Base de datos simple en un archivo JSON
-const DB_FILE = 'reservas.json';
+// La base queda fuera de la carpeta pública para no exponer datos personales.
+const DATA_DIR = path.join(__dirname, '..', 'profereges-data');
+const DB_FILE = path.join(DATA_DIR, 'reservas.json');
+
+if (!fs.existsSync(DATA_DIR)) {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+}
 
 if (!fs.existsSync(DB_FILE)) {
     fs.writeFileSync(DB_FILE, JSON.stringify([]));
@@ -23,10 +28,15 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Obtener todas las reservas (para verificar disponibilidad)
+// Exponer únicamente la disponibilidad, nunca los datos de las reservas.
 app.get('/api/reservas', (req, res) => {
     const data = JSON.parse(fs.readFileSync(DB_FILE));
-    res.json(data);
+    const availability = data.reduce((counts, reservation) => {
+        const key = `${reservation.day}:${reservation.time}`;
+        counts[key] = (counts[key] || 0) + 1;
+        return counts;
+    }, {});
+    res.json({ availability });
 });
 
 // Crear una nueva reserva
@@ -65,7 +75,7 @@ app.post('/api/reservas', (req, res) => {
     reservas.push(...nuevasReservas);
     fs.writeFileSync(DB_FILE, JSON.stringify(reservas, null, 2));
 
-    res.status(201).json({ message: 'Reserva confirmada con éxito.', reservas: nuevasReservas });
+    res.status(201).json({ message: 'Reserva confirmada con éxito.', times });
 });
 
 app.listen(PORT, () => {

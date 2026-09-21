@@ -1,0 +1,37 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 440 >>
+stream
+BT /F1 18 Tf 60 735 Td (Trigonometria: guia de repaso) Tj ET
+BT /F1 13 Tf 60 697 Td (Razones en el triangulo rectangulo) Tj ET
+BT /F1 11 Tf 60 659 Td (Seno = cateto opuesto / hipotenusa.) Tj ET
+BT /F1 11 Tf 60 621 Td (Coseno = cateto adyacente / hipotenusa.) Tj ET
+BT /F1 11 Tf 60 583 Td (Tangente = cateto opuesto / cateto adyacente.) Tj ET
+BT /F1 11 Tf 60 545 Td (Antes de calcular, identifica el angulo de referencia y los lados.) Tj ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+5 0 obj
+<< /Type /Catalog /Pages 4 0 R >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000000569 00000 n 
+0000000695 00000 n 
+0000000752 00000 n 
+trailer
+<< /Size 6 /Root 5 0 R >>
+startxref
+801
+%%EOF

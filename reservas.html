@@ -44,7 +44,7 @@
       <nav class="nav-menu">
         <ul>
           <li><a href="index.html#header">Principal</a></li>
-          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="aboutMe.html">Sobre mí</a></li>
           <li><a href="index.html#why-us">¿Qué hago y cómo?</a></li>
           <li><a href="blog.html">Blog del profesor</a></li>
           <li><a href="clases.html">Material de Estudio</a></li>
@@ -152,18 +152,16 @@
 
       try {
         const response = await fetch('/api/reservas');
-        const reservas = await response.json();
+        const { availability } = await response.json();
         
         // Horarios solicitados: 9:00 a 12:00 y 15:00 a 18:00
         const allTimes = ['09:00', '10:00', '11:00', '12:00', '15:00', '16:00', '17:00', '18:00'];
         
         // Filtrar horarios que ya tienen 6 alumnos para ese día
-        const timeCounts = reservas
-          .filter(r => r.day === selectedDay)
-          .reduce((acc, r) => {
-            acc[r.time] = (acc[r.time] || 0) + 1;
-            return acc;
-          }, {});
+        const timeCounts = allTimes.reduce((acc, time) => {
+          acc[time] = availability[`${selectedDay}:${time}`] || 0;
+          return acc;
+        }, {});
 
         timeSlotsContainer.innerHTML = '';
         

@@ -1764,6 +1764,61 @@ section {
 .about-cta .btn { background: var(--coral); border: 0; border-radius: 4px; font-weight: 700; padding: 14px 20px; }
 .about-cta .btn:hover { background: var(--coral-dark); }
 
+/* Página About Me */
+.about-me-page { background: var(--paper); }
+.about-me-hero { background: linear-gradient(135deg, var(--ink) 0%, #17334c 100%); color: var(--white); padding: 105px 0 115px; }
+.about-me-hero .container { max-width: 1240px; }
+.about-me-hero h1 { font-family: "Fraunces", serif; font-size: clamp(48px, 7vw, 82px); line-height: .98; margin: 15px 0 25px; }
+.about-me-hero h1 span { color: var(--coral-dark); }
+.about-me-hero > .container > p:last-child { max-width: 600px; color: rgba(255,255,255,.78); font-size: 18px; line-height: 1.6; margin: 0; }
+.about-me-profile { padding: 105px 0; }
+.about-me-profile h2 { color: var(--ink); font-family: "Fraunces", serif; font-size: clamp(34px, 4vw, 52px); line-height: 1.08; margin: 0 0 24px; }
+.about-me-profile p:not(.eyebrow) { color: var(--muted); line-height: 1.75; }
+.about-me-profile strong { color: var(--ink); }
+.about-me-photo { width: min(100%, 350px); min-height: 350px; margin: 0 auto; border: 1px solid rgba(255, 184, 0, .4); border-radius: 20px; background: linear-gradient(145deg, rgba(255,184,0,.18), rgba(28,53,78,.08)); overflow: hidden; box-shadow: 14px 14px 0 var(--coral); user-select: none; }
+.about-me-photo img { width: 100%; height: 350px; display: block; object-fit: cover; object-position: center; pointer-events: none; user-select: none; -webkit-user-drag: none; }
+.about-me-highlight { display: flex; align-items: center; gap: 14px; margin-top: 28px; padding: 16px 18px; border-left: 4px solid var(--coral); background: #fffaf5; color: var(--ink); }
+.about-me-highlight i { color: var(--coral-dark); font-size: 30px; }
+.about-me-highlight strong, .about-me-highlight span { display: block; }
+.about-me-highlight span { color: var(--muted); font-size: 14px; margin-top: 3px; }
+.about-me-story { padding: 95px 0; }
+.about-me-story h2, .about-me-tools h2 { color: var(--ink); font-family: "Fraunces", serif; font-size: clamp(32px, 4vw, 48px); line-height: 1.08; margin-bottom: 24px; }
+.about-me-story p:not(.eyebrow), .about-me-tools p { color: var(--muted); line-height: 1.75; }
+.about-me-facts { border-left: 4px solid var(--coral); background: var(--white); box-shadow: 0 16px 32px rgba(28,53,78,.08); }
+.about-me-facts div { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 20px 24px; border-bottom: 1px solid var(--line); }
+.about-me-facts div:last-child { border-bottom: 0; }
+.about-me-facts strong { color: var(--ink); font-family: "Fraunces", serif; font-size: 28px; }
+.about-me-facts span { color: var(--muted); font-size: 14px; text-align: right; }
+.about-me-method { padding: 95px 0; }
+.about-me-method .section-title { padding-bottom: 36px; }
+.about-me-method .section-title h2 { color: var(--ink); font-family: "Fraunces", serif; }
+.about-me-method-card { height: 100%; padding: 30px; border: 1px solid var(--line); border-radius: 16px; background: var(--white); box-shadow: 0 12px 28px rgba(28,53,78,.06); }
+.about-me-method-card > i { display: inline-flex; align-items: center; justify-content: center; width: 54px; height: 54px; margin-bottom: 20px; border-radius: 12px; background: rgba(255,184,0,.16); color: var(--ink); font-size: 28px; }
+.about-me-method-card h3 { color: var(--ink); font-size: 23px; margin-bottom: 12px; }
+.about-me-method-card p { color: var(--muted); line-height: 1.7; margin: 0; }
+.about-me-subjects { padding: 95px 0; }
+.about-me-subjects .section-title { padding-bottom: 36px; }
+.about-me-subjects .section-title h2 { color: var(--ink); font-family: "Fraunces", serif; }
+.about-me-subject { min-height: 86px; display: flex; align-items: center; gap: 14px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.8); color: var(--ink); font-weight: 700; box-shadow: 0 10px 22px rgba(28,53,78,.05); }
+.about-me-subject i { color: var(--coral-dark); font-size: 28px; }
+.about-me-tools { padding: 95px 0; }
+.about-me-tools-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
+.about-me-tools-list li { display: flex; align-items: center; gap: 12px; padding: 18px 0; border-bottom: 1px solid var(--line); color: var(--ink); font-weight: 600; }
+.about-me-tools-list i { color: var(--coral-dark); font-size: 24px; min-width: 26px; }
+.about-me-quote { padding: 95px 0; background: var(--coral); }
+.about-me-quote h2 { color: var(--ink); font-family: "Fraunces", serif; font-size: clamp(32px, 4vw, 52px); margin: 0 auto 28px; max-width: 720px; }
+.about-me-quote .eyebrow { color: var(--ink); }
+.about-me-quote .btn { background: var(--ink); border: 0; border-radius: 999px; padding: 14px 24px; font-weight: 700; }
+.about-me-quote .btn:hover { background: var(--coral-dark); color: var(--white); }
+
+@media (max-width: 768px) {
+  .about-me-hero { padding: 80px 0 90px; }
+  .about-me-profile { padding: 75px 0; }
+  .about-me-photo { min-height: 300px; box-shadow: 10px 10px 0 var(--coral); }
+  .about-me-photo img { height: 300px; }
+  .about-me-story, .about-me-method, .about-me-subjects, .about-me-tools, .about-me-quote { padding: 75px 0; }
+}
+
 @media (max-width: 576px) {
   .about-hero { padding: 80px 0 90px; }
   .about-hero h1 { font-size: 48px; }
