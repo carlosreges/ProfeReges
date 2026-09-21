@@ -1263,6 +1263,60 @@ html {
   --line: rgba(28, 53, 78, 0.18);
 }
 
+[data-theme="dark"] {
+  --ink: #F4F7FA;
+  --muted: #D4DCE5;
+  --paper: #101B27;
+  --white: #172635;
+  --line: rgba(244, 247, 250, 0.16);
+}
+
+[data-theme="dark"] body { background: var(--paper); color: var(--ink); }
+[data-theme="dark"] .section-bg,
+[data-theme="dark"] .faq,
+[data-theme="dark"] .about-me-profile,
+[data-theme="dark"] .about-me-tools { background: #101B27; }
+[data-theme="dark"] .counts,
+[data-theme="dark"] .about-me-method { background: #132333; }
+[data-theme="dark"] .about-panel,
+[data-theme="dark"] .why-us .card,
+[data-theme="dark"] .testimonial-item,
+[data-theme="dark"] .about-me-subject,
+[data-theme="dark"] .about-me-method-card,
+[data-theme="dark"] .about-me-facts,
+[data-theme="dark"] .faq-list li,
+[data-theme="dark"] .contact-left,
+[data-theme="dark"] .contact form { background: #172635; border-color: var(--line); }
+[data-theme="dark"] .contact { background: linear-gradient(180deg, #172635 0%, #101B27 100%); }
+[data-theme="dark"] .contact .info .email,
+[data-theme="dark"] .contact .info .phone,
+[data-theme="dark"] .about-me-highlight { background: #1D3042; }
+[data-theme="dark"] .contact .form-control { background: #101B27; color: var(--ink); border-color: var(--line); }
+[data-theme="dark"] .contact .form-control::placeholder { color: #AAB8C7; }
+[data-theme="dark"] .faq .faq-list a.collapsed,
+[data-theme="dark"] .faq .faq-list a,
+[data-theme="dark"] .about-me-subject,
+[data-theme="dark"] .about-me-tools-list li { color: var(--ink); }
+[data-theme="dark"] .about-me-photo { background: linear-gradient(145deg, rgba(255,184,0,.14), #172635); }
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin: 8px 20px;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 50%;
+  background: rgba(28,53,78,.85);
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.theme-toggle:hover { background: var(--coral); color: var(--ink); }
+
 body {
   background: var(--paper);
   color: var(--ink);
@@ -2126,4 +2180,134 @@ section {
     .blog.single-post {
         padding-top: 120px; /* Adjust based on header height on mobile */
     }
+}
+
+/* Ajustes finales de contraste para modo oscuro */
+[data-theme="dark"] #header {
+  background: #172635;
+  border-bottom-color: rgba(244, 247, 250, 0.16);
+}
+
+[data-theme="dark"] .nav-menu a,
+[data-theme="dark"] .nav-menu a:focus {
+  color: #D4DCE5;
+}
+
+[data-theme="dark"] .nav-menu a:hover,
+[data-theme="dark"] .nav-menu .active > a,
+[data-theme="dark"] .nav-menu li:hover > a {
+  color: var(--coral);
+}
+
+[data-theme="dark"] .section-bg,
+[data-theme="dark"] .faq,
+[data-theme="dark"] .counts,
+[data-theme="dark"] .about,
+[data-theme="dark"] .about-me-profile,
+[data-theme="dark"] .about-me-tools,
+[data-theme="dark"] .about-details,
+[data-theme="dark"] .blog,
+[data-theme="dark"] .reservas-section {
+  background: #101B27;
+}
+
+[data-theme="dark"] .about-me-method,
+[data-theme="dark"] .why-us,
+[data-theme="dark"] .material-estudio {
+  background: #132333;
+}
+
+[data-theme="dark"] .section-title h2,
+[data-theme="dark"] .about h3,
+[data-theme="dark"] .about h4,
+[data-theme="dark"] .about-me-profile h2,
+[data-theme="dark"] .about-me-story h2,
+[data-theme="dark"] .about-me-tools h2,
+[data-theme="dark"] .about-me-subjects h2,
+[data-theme="dark"] .about-me-method .section-title h2,
+[data-theme="dark"] .entry-title,
+[data-theme="dark"] .entry-title a,
+[data-theme="dark"] .sidebar-title,
+[data-theme="dark"] .card-title,
+[data-theme="dark"] .card-title a {
+  color: var(--ink);
+}
+
+[data-theme="dark"] .section-title h2 {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] #hero h1 {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .blog .entry-title,
+[data-theme="dark"] .blog .entry-title a {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] p,
+[data-theme="dark"] .card-text,
+[data-theme="dark"] .entry-content,
+[data-theme="dark"] .entry-content p,
+[data-theme="dark"] .sidebar,
+[data-theme="dark"] .sidebar-item,
+[data-theme="dark"] .faq .faq-list p,
+[data-theme="dark"] .about-me-profile p:not(.eyebrow),
+[data-theme="dark"] .about-me-story p:not(.eyebrow),
+[data-theme="dark"] .about-me-tools p {
+  color: var(--muted);
+}
+
+[data-theme="dark"] .about-panel,
+[data-theme="dark"] .why-us .card,
+[data-theme="dark"] .material-estudio .card,
+[data-theme="dark"] .booking-card,
+[data-theme="dark"] .blog .entry,
+[data-theme="dark"] .sidebar,
+[data-theme="dark"] .about-me-subject,
+[data-theme="dark"] .about-me-method-card,
+[data-theme="dark"] .about-me-facts,
+[data-theme="dark"] .faq-list li,
+[data-theme="dark"] .contact-left,
+[data-theme="dark"] .contact form {
+  background: #172635;
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+[data-theme="dark"] .about-subjects-list .list-group-item,
+[data-theme="dark"] .material-estudio .list-group-item {
+  background: #1D3042;
+  color: var(--muted);
+  border-color: var(--line);
+}
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select,
+[data-theme="dark"] .search-form input {
+  background: #101B27;
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+[data-theme="dark"] .form-control::placeholder,
+[data-theme="dark"] .search-form input::placeholder {
+  color: #AAB8C7;
+}
+
+[data-theme="dark"] .faq .faq-list a,
+[data-theme="dark"] .faq .faq-list a.collapsed,
+[data-theme="dark"] .sidebar a,
+[data-theme="dark"] .entry-content a,
+[data-theme="dark"] .sidebar-list a {
+  color: #FFD166;
+}
+
+[data-theme="dark"] .blog.single-post .entry-footer {
+  border-top-color: var(--line);
+}
+
+[data-theme="dark"] #footer {
+  background: #0B141E;
 }

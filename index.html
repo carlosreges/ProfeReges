@@ -13,7 +13,7 @@
   <!-- SEO Meta Tags -->
   <meta name="description" content="Clases de apoyo escolar personalizadas en Córdoba con el Prof. Carlos Reges. Preparación para exámenes de ingreso (Monserrat, Manuel Belgrano), lengua, latín, matemáticas y más. +15 años de experiencia.">
   <meta name="author" content="Prof. Carlos Reges">
-  <link rel="canonical" href="https://www.carlosreges.com.ar/index.html">
+  <link rel="canonical" href="https://www.carlosreges.com.ar/">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -36,7 +36,14 @@
     "@type": "EducationalOrganization",
     "name": "Prof. Carlos Reges",
     "url": "https://www.carlosreges.com.ar",
+    "@id": "https://www.carlosreges.com.ar/#organization",
     "logo": "https://www.carlosreges.com.ar/assets/img/logoCR.png",
+    "image": "https://www.carlosreges.com.ar/assets/img/profe.png",
+    "sameAs": [
+      "https://www.facebook.com/profereges/",
+      "https://www.instagram.com/aprender.sentido/",
+      "https://www.linkedin.com/in/carlosreges/"
+    ],
     "description": "Clases de apoyo escolar personalizadas en Córdoba con el Prof. Carlos Reges. Preparación para exámenes de ingreso (Monserrat, Manuel Belgrano), lengua, latín, matemáticas y más. +15 años de experiencia.",
     "address": {
       "@type": "PostalAddress",
@@ -78,9 +85,9 @@
           <li><a href="#why-us" class="scrollto">¿Qué hago y cómo?</a></li>
           <li><a href="blog.html" class="scrollto">Blog del profesor</a></li>
           <li><a href="clases.html">Material de Estudio</a></li>
-          <li><a href="reservas.html">Reservar Clase</a></li>
-          <li><a href="#contact" class="scrollto">Formulario de contacto</a></li>
-          <li><a href="#contact" class="scrollto"><b>Contáctame</b></a></li>
+          <li><a href="contacto.html">Formulario de contacto</a></li>
+          <li><button type="button" class="theme-toggle" aria-label="Activar modo oscuro" aria-pressed="false"><i class="bx bx-moon"></i></button></li>
+          <li><a href="contacto.html"><b>Contáctame</b></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -93,7 +100,7 @@
       <h1 class="text-center">Aprende con sentido<br><span>y cambia el resultado</span></h1>
       <p class="hero-lead">Clases claras, acompañamiento cercano y herramientas para que llegues preparado a cada desafío.</p>
       <div class="hero-actions">
-        <a type="button" href="#contact" class="btn btn-primary">Quiero consultar <i class="bx bx-arrow-up-right"></i></a>
+        <a type="button" href="contacto.html" class="btn btn-primary">Quiero consultar <i class="bx bx-arrow-up-right"></i></a>
         <a href="#about" class="hero-secondary scrollto">Conoce mi propuesta <i class="bx bx-down-arrow-alt"></i></a>
       </div>
     </div>
@@ -403,71 +410,6 @@
       </div>
     </section><!-- End Frequenty Asked Questions Section -->
 
-    <!-- ======= Contact Us Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contáctame</h2>
-        </div>
-
-        <div id="section-a" class="row justify-content-center">
-          <div class="col-lg-4 col-md-5 mb-5 mb-md-0">
-            <div class="contact-left">
-              <div class="info">
-                <div class="email">
-                  <i class="bx bx-envelope"></i>
-                  <a href="mailto:info@profereges.com.ar" target="_blank">
-                    <p>Enviar email</p>
-                  </a>
-                </div>
-                <div class="phone">
-                  <i class="bx bx-phone-call"></i>
-                  <a id="phone-link" href="#">
-                    <p>Llamar por teléfono</p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="social-links">
-                <h4>Mis redes sociales</h4>
-                <a href="https://www.facebook.com/profereges/" target="_blank" class="facebook"><i
-                    class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/aprender.sentido/" target="_blank" class="instagram"><i
-                    class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/carlosreges/" target="_blank" class="linkedin"><i
-                    class="bx bxl-linkedin"></i></a>
-                <a href="https://discord.gg/9HkWBDRA7" target="_blank" class="discord" aria-label="Discord"><i class="bx bxl-discord-alt"></i></a>
-                <a href="https://wa.link/d6pmno/" target="_blank" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
-              </div>
-            </div>
-          </div>
-          <!--  <div class="col-lg-5 col-md-7">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1ki_fkDLrQqEcMrD2mqypQC5rECyv7IToFcz3iD-ykFSeUw/viewform?embedded=true" width="300" height="402" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-          </div> -->
-          <div class="col-lg-7 col-md-9">
-            <h4>Escríbeme para mayor información:</h4>
-            <form action="https://formspree.io/f/xgvanjzq" method="POST" id="form">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre y apellido" required>
-              </div>
-              <div class="form-group mt-3">
-                <input type="tel" name="phone" class="form-control" id="phone" placeholder="Teléfono" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="¿Desea información sobre nuestro servicio?" required></textarea>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-success" id="button">Enviar Mensaje</button>
-              </div>
-              <div class="text-center mt-3" id="form-message"></div>
-            </form>
-
-          </div>
-        </div>
-      </div>
-    </section><!-- End Contact Us Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -486,6 +428,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/color-modes.js"></script>
 
   <script>
     // Función para actualizar la fecha de precios

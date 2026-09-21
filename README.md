@@ -5,9 +5,9 @@ Sitio web de clases de apoyo escolar y preparación para exámenes de ingreso. L
 ## Funcionalidades
 
 - Diseño responsive para escritorio, tablet y móvil.
-- Página principal con propuesta educativa, preguntas frecuentes y contacto.
+- Página principal con propuesta educativa, preguntas frecuentes y acceso al contacto.
+- Página `contacto.html` con formulario, datos de contacto y redes sociales.
 - Página `aboutMe.html` con perfil profesional, experiencia, áreas de enseñanza y recursos digitales.
-- Sistema de reservas con selección de día y horarios disponibles.
 - Formulario de contacto conectado a Formspree.
 - Enlaces a email, teléfono, WhatsApp, Discord y redes sociales.
 - Material de estudio organizado por asignatura.
@@ -59,8 +59,8 @@ El servidor crea `reservas.json` automáticamente dentro de la carpeta externa `
 .
 ├── index.html                 # Página principal
 ├── aboutMe.html               # Perfil profesional
+├── contacto.html              # Formulario y datos de contacto
 ├── blog.html                  # Blog
-├── reservas.html              # Sistema de reservas
 ├── clases.html                # Material de estudio
 ├── server.js                  # Servidor Express y API de reservas
 ├── assets/

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /reservas.html
+Disallow: /reservas.json
+
+Sitemap: https://www.carlosreges.com.ar/sitemap.xml
