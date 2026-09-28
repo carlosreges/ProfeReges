@@ -22,7 +22,7 @@ Sitio web de clases de apoyo escolar y preparación para exámenes de ingreso. L
 
 ## Requisitos
 
-- Node.js 18 o superior.
+- Node.js 24.x (versión fijada en `engines.node` de `package.json` y usada también por Vercel).
 - npm.
 
 ## Instalación y ejecución
