@@ -2440,6 +2440,16 @@ section {
   transition: transform .25s ease, background .25s ease;
 }
 .landing-cta .btn-wa:hover { background: #128C7E; transform: translateY(-2px); }
+.landing-cta .btn-form {
+  background: #FFFFFF;
+  border: 0;
+  border-radius: 999px;
+  padding: 14px 26px;
+  font-weight: 700;
+  color: #1C354E;
+  transition: transform .25s ease, background .25s ease, color .25s ease;
+}
+.landing-cta .btn-form:hover { background: #1C354E; color: #FFFFFF; transform: translateY(-2px); }
 
 .private-class-card { position: relative; }
 .private-class-link {

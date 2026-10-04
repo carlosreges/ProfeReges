@@ -39,11 +39,16 @@
    */
   const toogleNav = function () {
     let navButton = select('.nav-toggle')
+    let navMenu = select('.nav-menu')
+    // Las landing pages no tienen menú: se evita el error si no existen.
+    if (!navButton || !navMenu) {
+      return
+    }
     navButton.classList.toggle('nav-toggle-active')
     navButton.querySelector('i').classList.toggle('bx-x')
     navButton.querySelector('i').classList.toggle('bx-menu')
 
-    select('.nav-menu').classList.toggle('nav-menu-active')
+    navMenu.classList.toggle('nav-menu-active')
   }
   on('click', '.nav-toggle', function (e) {
     toogleNav();
@@ -62,11 +67,18 @@
    * Scrool links with a class name .scrollto
    */
   on('click', '.scrollto', function (e) {
-    if (select(this.hash)) {
-      select('.nav-menu .active').classList.remove('active')
-      this.parentElement.classList.toggle('active')
-      toogleNav();
+    // En las landing pages no hay menú: el ancla hace su scroll normal.
+    if (!select(this.hash) || !select('.nav-menu')) {
+      return
     }
+    const activeNavLink = select('.nav-menu .active')
+    if (activeNavLink) {
+      activeNavLink.classList.remove('active')
+    }
+    if (this.parentElement) {
+      this.parentElement.classList.toggle('active')
+    }
+    toogleNav();
   }, true)
 
   // Manejar envío del formulario sin redirección
