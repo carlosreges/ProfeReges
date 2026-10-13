@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Simulacro de Ingreso Belgrano 2025 · Lengua y Literatura | Prof. Carlos Reges</title>
+  <meta name="description" content="Hacé online el simulacro de Lengua de la Prueba de Ingreso 2025 de la Escuela Superior de Comercio Manuel Belgrano: dictado, comprensión lectora, secuencia narrativa, figuras literarias, conectores, puntuación, gramática y más. Con cronómetro y corrección automática.">
+  <meta name="author" content="Carlos Reges">
+  <link rel="canonical" href="https://www.carlosreges.com.ar/prueba-lengua.html">
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/favicon.ico" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Quiz",
+    "name": "Simulacro de Ingreso Belgrano 2025 - Lengua y Literatura",
+    "url": "https://www.carlosreges.com.ar/prueba-lengua.html",
+    "inLanguage": "es-AR",
+    "educationalLevel": "Ingreso universitario",
+    "about": "Simulacro basado en la Prueba de Nivel Ingreso 2025 de la Escuela Superior de Comercio Manuel Belgrano (UNC): comprensión lectora, gramática y análisis textual",
+    "author": { "@type": "Person", "name": "Carlos Reges", "jobTitle": "Licenciado en Educación Integral" }
+  }
+  </script>
+</head>
+
+<body class="prueba-page">
+
+  <header id="header">
+    <div class="container-fluid">
+      <div class="logo"><a href="index.html"><img src="assets/img/logoCR.png" alt="Prof. Carlos Reges" class="img-fluid"></a></div>
+      <button type="button" class="nav-toggle" aria-label="Abrir menú"><i class="bx bx-menu"></i></button>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Principal</a></li>
+          <li><a href="aboutMe.html">Sobre mí</a></li>
+          <li><a href="index.html#why-us">¿Qué hago y cómo?</a></li>
+          <li><a href="blog.html">Blog del profesor</a></li>
+          <li><a href="clases.html">Material de Estudio</a></li>
+          <li class="active"><a href="prueba-lengua.html">Simulacro de Lengua</a></li>
+          <li><a href="contacto.html">Formulario de contacto</a></li>
+          <li><button type="button" class="theme-toggle" aria-label="Activar modo oscuro" aria-pressed="false"><i class="bx bx-moon"></i></button></li>
+          <li><a href="contacto.html"><b>Contáctame</b></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======= Encabezado de la prueba ======= -->
+    <section class="prueba-hero">
+      <div class="container">
+        <p class="hero-kicker">SIMULACRO · PRUEBA DE INGRESO · ESCUELA SUPERIOR DE COMERCIO MANUEL BELGRANO 2025</p>
+        <h1>Simulacro de Lengua<br>y Literatura <span class="prueba-badge">Prueba 1</span></h1>
+        <nav class="prueba-switch" aria-label="Elegir simulacro">
+          <a href="prueba-lengua.html" class="activo" aria-current="page">Prueba 1</a>
+          <a href="prueba-lengua-2.html">Prueba 2</a>
+        </nav>
+        <p class="prueba-lead">Resolvé la prueba tal como se presenta en el ingreso de Belgrano (UNC): dos partes de 50 puntos cada una, con textos, consignas y puntajes originales. Al terminar, se corrige sola y ves cada respuesta correcta.</p>
+        <ul class="prueba-instrucciones">
+          <li><i class="bx bx-time"></i> Tenés <strong>90 minutos</strong>. El cronómetro empieza al cargar la página; al llegar a cero se corrige sola.</li>
+          <li><i class="bx bx-list-check"></i> Parte I: dictado, comprensión del cuento, secuencia, figuras literarias, conectores, mayúsculas y puntuación. Parte II: noticia, gramática y entrevista.</li>
+          <li><i class="bx bx-refresh"></i> Podés revisar todo antes de tocar «Corregir». Después, reintentar las veces que quieras o imprimir la prueba.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="prueba-wrap">
+      <div class="container">
+
+        <!-- Barra de estado: cronómetro + progreso + puntaje -->
+        <div class="prueba-estado">
+          <div class="prueba-tiempo" id="caja-tiempo"><i class="bx bx-time"></i> <span id="tiempo">90:00</span></div>
+          <div class="prueba-progreso">Respondidas: <strong id="progreso">0 / 57</strong></div>
+          <div class="prueba-puntaje" id="caja-puntaje" hidden><i class="bx bx-trophy"></i> <span id="puntaje"></span></div>
+        </div>
+
+        <form id="form-prueba" novalidate>
+          <!-- PARTE I -->
+          <div class="prueba-parte">
+            <h2 class="prueba-parte-titulo">Parte I <span>· 50 puntos</span></h2>
+          </div>
+
+          <!-- 1. Dictado -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>1 · Dictado</h2>
+              <span class="prueba-pts">5 espacios · 5 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Parte I, ejercicio 1. Completá el dictado con las palabras del banco. <em>(Dictado de práctica con texto original de este simulacro: el dictado de la prueba real se transcribe escuchando en el aula.)</em></p>
+            <div class="prueba-banco">
+              <strong>Banco de palabras:</strong>
+              <span>búho</span><span>trigo</span><span>atardecer</span><span>tuvo</span><span>salvó</span>
+            </div>
+            <p class="prueba-texto-completar">En el crepúsculo, un <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="búho" data-accept="búho|buho" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Dictado espacio 1"><span class="prueba-feedback-inline" hidden></span></span> llamado Luna se posó sobre un campo de <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="trigo" data-accept="trigo" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Dictado espacio 2"><span class="prueba-feedback-inline" hidden></span></span> maduro, contemplando el <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="atardecer" data-accept="atardecer|ocaso" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Dictado espacio 3"><span class="prueba-feedback-inline" hidden></span></span>. Esa noche, <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="tuvo" data-accept="tuvo" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Dictado espacio 4"><span class="prueba-feedback-inline" hidden></span></span> un encuentro inesperado con un zorro, pero su sabiduría <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="no lo salvó" data-accept="no lo salvó|no lo salvo|salvó|salvo" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Dictado espacio 5"><span class="prueba-feedback-inline" hidden></span></span>.</p>
+          </section>
+
+          <!-- Texto base: cuento -->
+          <article class="prueba-card prueba-texto-card">
+            <div class="prueba-card-head">
+              <h2>Texto: «Campo último modelo»</h2>
+              <span class="prueba-pts">de Vilma Novick Freyre · leelo con atención</span>
+            </div>
+            <div class="prueba-texto">
+              <p>Don Máximo Lindor Campero tiene su campo entre Tancacha y Hernando. Es un fanático que quiere hacer honor a su nombre y apellido teniendo al máximo de lindo su campo y lo consigue, a veces dando la nota. Pero para eso hay que tenerle una paciencia de santo, porque es muy difícil seguirle la corriente. Siempre contó con los mejores adelantos, porque hay que reconocer que, a pesar de sus chifladuras, es progresista e innovador. La primera víctima del progreso fue Ramoncito, que no cuidó más a los animales por culpa del boyero eléctrico. Cuando puso la bomba para el agua corriente, el viejo molino se quedó como una olvidada flor mirando a la distancia con sus pétalos de lata.</p>
+              <p>Después asfaltó la calle de entrada y puso tranquera automática. Luego le colocó piso parqué al establo del caballo Mala Cara. Compró tractor con aire acondicionado, trilladora con casetera, sembradora con video. Como la gente lo admiraba y adulaba, a don Máximo se le hizo un revoltijo en la cabeza y se le volaron las pretensiones. Ese fue el comienzo…</p>
+              <p>Al chiquero le puso cerámicos y duchas individuales. Obligaba a los chanchos a bañarse diariamente con champú y crema de enjuague. A usar desodorante, talco y crema nutritiva para no pasparse. A las gatas, les hacía hacer la manicura, les pintaba las uñas y a los gatos les arreglaba y teñía los bigotes. A los perros, les enseñó a ladrar en francés y debían usar camisa blanca y moño negro. A las gallinas, les hacía la permanente, les ponía hebillas y además las obligaba a usar ojotas. Al gallo Teobaldo, lo desplazó de su escenario de cantante madrugador y en su lugar puso a un gallo electrónico. A los pollitos, les compró baberos y pañales descartables. A las ranas y sapos, les hizo una laguna artificial con agua climatizada. Su delirio iba en aumento. La prueba está en que hizo construir baños con inodoro y bidé a lo largo y ancho del campo, porque prohibió a los animales hacer caca por cualquier parte.</p>
+              <p>Todo esto iba creando un clima bastante espeso. Era como un globo al que se lo infla más y más hasta que está a punto de reventar. Y reventó nomás… Fue cuando don Máximo pretendió que las vacas usaran remeras.</p>
+              <p>Esa noche, cuando la luna asomó su cara de ceniza plateada por el borde de la parrilla de surcos, los animales dieron por comenzada la reunión. Hablaron, discutieron, debatieron y organizaron su plan hasta que el ridículo gallo electrónico con su pi-pip… pip… pip… en lugar de un fuerte kikiriquili, anunció que el sol aparecía con su mameluco de luz para estrenar el nuevo día.</p>
+              <p>Era la fecha justa de la demostración anual que don Máximo hacía en su campo, para que los vecinos, autoridades y estudiosos del AIC (Asociación de Innovaciones Campestres) se quedaran con la boca abierta y morada de envidia. Todo estaba en perfecto orden. La comitiva partió rumbo al gallinero parquizado. Las gallinas, muy serias y coquetas, entregaron a los presentes los huevos más gigantes que se hayan visto. Para demostrar que eran de triple yema, había sartenes computarizadas, que al instante servirían los mejores huevos fritos. Pero, rompieron uno y nada, otro y nada; una docena y nada. Al borde de un infarto, don Máximo trató de justificarse, mientras las gallinas sacaron un cartel que decía: PONEDORAS EN HUELGA. HUEVOS DE AIRE.</p>
+              <p>Todos se largaron a reír, y avergonzado, don Máximo los llevó hasta el salón de ordeñe con música funcional. Allí ofreció la leche más cremosa y sabrosa de los últimos tiempos.</p>
+              <p>Las vacas se sacaron las ridículas remeras y dejaron que las ordeñaran. En lugar de dar leche, unas daban agua, otras sopa y las de la punta daban refresco de naranja y limonada.</p>
+              <p>Don Máximo parecía un arco iris: pasaba del rojo al verde, del verde al lila, del lila al blanco y ¡paf!… se desplomó… Cuando reaccionó, vio al caballo Mala Cara haciendo equilibrio en el alambrado y cantando a todo pulmón ki-kirikiquiii mientras las gallinas relinchaban, los perros mugían y los gatos cacareaban. Don Máximo creyó que había enloquecido y no era para menos. El plan de los animales había salido perfecto. Todos ese día se habían divertido y reído como nunca de las exageradas ocurrencias de don Máximo.</p>
+              <p>Por eso, el campo guardó las risas de los invitados como si fueran semillas. Ahora, don Máximo es dueño de la más grande cosecha de alegría.</p>
+            </div>
+            <p class="prueba-glosario"><strong>Glosario:</strong> boyero: instrumentos que permiten electrificar los alambrados y mantener confinado al ganado. · chiquero: corral para los cerdos.</p>
+          </article>
+
+          <!-- 2. Respondé -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>2 · Respondé</h2>
+              <span class="prueba-pts">3 preguntas · 6 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Respondé según el cuento. <em>(En el examen real se responden a mano; acá se elige la opción correcta para la autocorrección.)</em></p>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="a" data-puntos="2">
+              <p class="prueba-num"><span>a</span> ¿Qué trama textual predomina en el cuento?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p2a" value="a"><span>a) Narrativa.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2a" value="b"><span>b) Descriptiva.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2a" value="c"><span>c) Expositiva.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2a" value="d"><span>d) Argumentativa.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="a" data-puntos="2">
+              <p class="prueba-num"><span>b</span> ¿Qué función del lenguaje predomina en el cuento?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p2b" value="a"><span>a) Literaria / poética.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2b" value="b"><span>b) Referencial o informativa.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2b" value="c"><span>c) Apelativa.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2b" value="d"><span>d) Metalingüística.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="c" data-puntos="2">
+              <p class="prueba-num"><span>c</span> El texto que leíste es:</p>
+              <div class="prueba-opciones prueba-vf">
+                <label class="prueba-opcion"><input type="radio" name="p2c" value="a"><span>a) Fábula.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2c" value="b"><span>b) Leyenda.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2c" value="c"><span>c) Cuento.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- 3. Marcá con una X la opción que más se ajuste -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>3 · Marcá la opción correcta</h2>
+              <span class="prueba-pts">4 preguntas · 7 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Elegí la opción que más se ajuste al contenido del texto.</p>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="a" data-puntos="2">
+              <p class="prueba-num"><span>a</span> ¿Qué consecuencias tuvo que la gente admirara y adulara a don Máximo?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p3a" value="a"><span>a) Que don Máximo siguiera con los adelantos en su campo.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3a" value="b"><span>b) Que don Máximo dejara de implementar novedades.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3a" value="c"><span>c) Que Máximo consultara a los animales si querían renovar su aspecto y su espacio.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3a" value="d"><span>d) Que Máximo empezara a ayudar a las autoridades de la Asociación de Innovaciones Campestres.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="d" data-puntos="2">
+              <p class="prueba-num"><span>b</span> ¿Cuál era el plan de los animales?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p3b" value="a"><span>a) Hablar con don Máximo para expresarle su malestar.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3b" value="b"><span>b) Mostrar lo positivo de la incorporación de las novedades en el campo.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3b" value="c"><span>c) Escapar del campo para no volver.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3b" value="d"><span>d) Hacer fracasar la demostración anual que había organizado don Máximo.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="b" data-puntos="2">
+              <p class="prueba-num"><span>c</span> ¿Por qué al final del cuento se afirma que «Ahora don Máximo es dueño de la más grande cosecha de alegría»?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p3c" value="a"><span>a) Porque los animales se quedaron contentos luego de hacer fracasar la demostración de don Máximo.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3c" value="b"><span>b) Porque las risas de los invitados ese día se guardaron en el campo como si fueran semillas.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3c" value="c"><span>c) Porque don Máximo se sentía feliz con todas las ocurrencias que tenía.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3c" value="d"><span>d) Porque la sembradora con video lo hacía entretenerse mientras trabajaba.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="a" data-puntos="1">
+              <p class="prueba-num"><span>d</span> ¿Cómo es don Máximo Lindor Campero?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p3d" value="a"><span>a) Exagerado, innovador, imaginativo, ocurrente.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3d" value="b"><span>b) Innovador, imaginativo, delirante, vago.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3d" value="c"><span>c) Soñador, exigente, innovador, progresista.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3d" value="d"><span>d) Trabajador, innovador, progresista, quejoso.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- 4. Ordenar secuencias -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>4 · Ordená las secuencias del texto</h2>
+              <span class="prueba-pts">9 fragmentos · 9 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Ordená los hechos del cuento de arriba hacia abajo (el primero arriba). Usá las flechas o arrastrá cada fragmento.</p>
+            <ol class="prueba-orden" id="orden-seq" data-puntos-item="1">
+              <li class="prueba-orden-item" data-id="5" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">Reunión de los animales.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="1" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">Deseos innovadores de don Máximo para su campo.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="9" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">Cosecha de alegría.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="3" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">Admiración y adulación de la gente.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="7" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">Fracaso de la demostración.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="2" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">Incorporación de algunas novedades tecnológicas.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="8" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">Risas de los invitados por las ocurrencias de don Máximo.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="4" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">Implementación de más innovaciones para el campo.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="6" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">Demostración anual en el campo de don Máximo.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+            </ol>
+            <p class="prueba-feedback" id="feedback-orden" hidden></p>
+          </section>
+
+          <!-- 5. Recursos poéticos -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>5 · Recursos literarios</h2>
+              <span class="prueba-pts">2 espacios · 4 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Escribí el nombre del recurso poético o literario reconocés en cada fragmento. Se aceptan sinónimos y variantes.</p>
+            <p class="prueba-texto-completar">«Don Máximo parecía un arco iris»: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="símil" data-accept="símil|simil|comparación|comparacion" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Recurso literario 1"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">«El sol aparecía con su mameluco de luz para estrenar el nuevo día»: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="personificación" data-accept="personificación|personificacion|prosopopeya|prosopopeya" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Recurso literario 2"><span class="prueba-feedback-inline" hidden></span></span></p>
+          </section>
+
+          <!-- 6. Referencias -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>6 · Referencias</h2>
+              <span class="prueba-pts">4 espacios · 8 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Indicá a qué o a quién se refiere la palabra en negrita en cada fragmento.</p>
+            <p class="prueba-texto-completar">a. «Como la gente <strong>lo</strong> admiraba…»: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="don Máximo" data-accept="don maximo|maximo|máximo" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Referencia a"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">b. «Luego <strong>le</strong> colocó piso parqué al establo del caballo Mala Cara»: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="al establo del caballo Mala Cara" data-accept="al establo del caballo Mala Cara|al establo|al caballo mala cara|el caballo mala cara|al establo del caballo|mala cara" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Referencia b"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">c. «<strong>La comitiva</strong> partió rumbo al gallinero parquizado»: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="los vecinos, autoridades y estudiosos del AIC" data-accept="los vecinos autoridades y estudiosos del aic|vecinos autoridades y estudiosos|autoridades y estudiosos del aic|los invitados|vecinos autoridades estudiosos y don maximo|don maximo y los invitados|el grupo de invitados|la gente invitada" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Referencia c"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">d. «Allí ofreció <strong>la</strong> leche más cremosa y sabrosa de los últimos tiempos»: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="la vaca" data-accept="la vaca|una vaca|las vacas|la de las vacas|algunas vacas" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Referencia d"><span class="prueba-feedback-inline" hidden></span></span></p>
+          </section>
+
+          <!-- 7. Conectores -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>7 · Conectores</h2>
+              <span class="prueba-pts">4 conectores · 4 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Clasificá cada conector extraído del texto en la categoría que corresponde.</p>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="t" data-puntos="1">
+              <p class="prueba-num"><span>luego</span></p>
+              <select class="prueba-select" aria-label="Clasificación del conector luego">
+                <option value="">Elegí una opción…</option>
+                <option value="t">Conector de tiempo</option>
+                <option value="c">Conector de causa</option>
+                <option value="o">Conector de oposición</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="c" data-puntos="1">
+              <p class="prueba-num"><span>porque</span></p>
+              <select class="prueba-select" aria-label="Clasificación del conector porque">
+                <option value="">Elegí una opción…</option>
+                <option value="c">Conector de causa</option>
+                <option value="t">Conector de tiempo</option>
+                <option value="o">Conector de oposición</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="o" data-puntos="1">
+              <p class="prueba-num"><span>pero</span></p>
+              <select class="prueba-select" aria-label="Clasificación del conector pero">
+                <option value="">Elegí una opción…</option>
+                <option value="o">Conector de oposición</option>
+                <option value="c">Conector de causa</option>
+                <option value="t">Conector de tiempo</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="t" data-puntos="1">
+              <p class="prueba-num"><span>mientras</span></p>
+              <select class="prueba-select" aria-label="Clasificación del conector mientras">
+                <option value="">Elegí una opción…</option>
+                <option value="t">Conector de tiempo</option>
+                <option value="o">Conector de oposición</option>
+                <option value="c">Conector de causa</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- 8. Mayúsculas -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>8 · Uso de mayúsculas</h2>
+              <span class="prueba-pts">4 espacios · 4 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Transcribí del siguiente fragmento un ejemplo de cada uso de la mayúscula.</p>
+            <p class="prueba-quote">«Era la fecha justa de la demostración anual que <strong>don Máximo</strong> hacía en su campo, para que los vecinos, autoridades y estudiosos del <strong>AIC</strong> (<strong>Asociación de Innovaciones Campestres</strong>) se quedaran con la boca abierta y morada de envidia.»</p>
+            <p class="prueba-texto-completar">Nombre propio: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="don Máximo" data-accept="don maximo|maximo|máximo|don máximo lindor campero" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Nombre propio"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Nombre de institución: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="Asociación de Innovaciones Campestres" data-accept="asociacion de innovaciones campestres" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Nombre de institución"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Siglas: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="AIC" data-accept="aic" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Siglas"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Comienzo de oración: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="Era" data-accept="era" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Comienzo de oración"><span class="prueba-feedback-inline" hidden></span></span></p>
+          </section>
+
+          <!-- 9. Puntuación -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>9 · Signos de puntuación</h2>
+              <span class="prueba-pts">3 preguntas · 3 puntos</span>
+            </div>
+            <p class="prueba-enunciado">¿Por qué se usaron los siguientes signos de puntuación en el texto? Elegí la opción correcta.</p>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="b" data-puntos="1">
+              <p class="prueba-num"><span>a</span> «Don Máximo parecía un arco iris<b>:</b> pasaba del rojo al verde…». En el fragmento anterior se usaron los dos puntos:</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p9a" value="a"><span>a) Para separar párrafos.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p9a" value="b"><span>b) Para introducir una explicación.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p9a" value="c"><span>c) Para marcar la intervención del narrador.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="c" data-puntos="1">
+              <p class="prueba-num"><span>b</span> «Compró tractor con aire acondicionado<b>,</b> trilladora con casetera<b>,</b> sembradora con video». En el fragmento anterior se usaron las comas:</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p9b" value="a"><span>a) Para realizar una aclaración.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p9b" value="b"><span>b) Para destacar una idea.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p9b" value="c"><span>c) Para encerrar o delimitar los elementos de una enumeración.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="a" data-puntos="1">
+              <p class="prueba-num"><span>c</span> «Esa noche<b>,</b> cuando la luna asomó su cara de ceniza plateada por el borde de la parrilla de surcos<b>,</b> los animales dieron por comenzada la reunión». En el fragmento anterior se usaron las comas:</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p9c" value="a"><span>a) Para realizar una aclaración.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p9c" value="b"><span>b) Para introducir una enumeración.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p9c" value="c"><span>c) Para realizar una cita textual.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- PARTE II -->
+          <div class="prueba-parte">
+            <h2 class="prueba-parte-titulo">Parte II <span>· 50 puntos</span></h2>
+          </div>
+
+          <!-- Texto base: noticia -->
+          <article class="prueba-card prueba-texto-card">
+            <div class="prueba-card-head">
+              <h2>Texto: «Las vacas con las gafas de realidad virtual»</h2>
+              <span class="prueba-pts">adaptado de Clarín · leelo con atención</span>
+            </div>
+            <div class="prueba-texto">
+              <p>Turquía. Un granjero inquieto ideó una manera original de aumentar la producción de leche de sus vacas; y dice que le funciona. La inédita técnica del productor es colocarle anteojos de realidad virtual a las vacas. De esa manera, las vacas piensan que están en medio de un prado verde en verano, que es lo que les muestran las gafas en tres dimensiones. El hombre dice que creció casi un 25 % la cantidad de leche que dan.</p>
+              <p>İzzet Koçak no es un improvisado, su familia ha estado criando ganado en una granja en Aksaray durante tres generaciones, y el negocio «ha perdurado durante tanto tiempo porque siempre hemos tratado de mantenernos al día».</p>
+              <p>Su apuesta, entonces, es hacia soluciones no convencionales. Lo de las gafas no fue su primera propuesta en post de aumentar la producción de leche. En un principio, Koçak experimentó poniéndoles música relajante a las vacas pero la idea no funcionó como esperaba, aunque reconoció que sí notaba a los bovinos más relajados.</p>
+              <p>«Actualmente estamos en la primera fase de prueba, para la segunda etapa de prueba hemos pedido diez gafas de realidad virtual más. Si tenemos éxito con estas, pediremos gafas protectoras para todo nuestro rebaño». Koçak dijo que continúa pasándole música a las vacas para que estén más relajadas. Supervisa su estado de ánimo y comportamiento con la ayuda de un sistema de seguimiento que recibe datos de un chip conectado a los tobillos de las vacas y afirma que la música también marca una gran diferencia.</p>
+              <p>Koçak contó que se inspiró en un artículo de noticias sobre vacas que usaban gafas de realidad virtual en una granja en Rusia. Le intrigaba la idea, así que se puso en contacto con la empresa que fabricaba las gafas especiales para bovinos y pidió un par de pares. Ahora que comprobó el efecto de la tecnología VR, planea pedir otras diez, y si la tasa de producción de leche aumenta de la misma manera, quiere obtener auriculares para todas sus ciento ochenta vacas.</p>
+              <p>«La realidad virtual fue probada por primera vez por una empresa en Rusia, lo vimos por casualidad en las redes sociales», sostuvo İzzet Koçak. «Decidimos probarla también. Por ahora, la pusimos en dos de nuestras vacas y observamos el aumento en la producción de leche». Ahora, el granjero turco apuesta a las gafas de realidad virtual especiales que supuestamente hacen que los animales crean que están pastando en un prado soleado, en lugar de en una lúgubre granja interior en pleno invierno.</p>
+              <p>«Obtenemos una media de veintidós litros de leche al día de nuestras vacas», dijo Koçak a la Agencia de Noticias turca Anadolu. «Hicimos que dos de nuestras vacas usaran lentes de realidad virtual y observaran un extenso pasto verde todo el día, y la producción diaria de leche aumentó hasta veintisiete litros». «Estas gafas son emocionalmente buenas para los animales, notamos que están menos estresados. Esto se reflejó tanto en la producción como en la calidad de la leche», agregó.</p>
+            </div>
+          </article>
+
+          <!-- P2.1 Función del lenguaje -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>1 · Función del lenguaje</h2>
+              <span class="prueba-pts">1 pregunta · 2 puntos</span>
+            </div>
+            <p class="prueba-enunciado">¿Cuál es la función del lenguaje que predomina en el texto? Elegí la opción correcta.</p>
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="c" data-puntos="2">
+              <div class="prueba-opciones prueba-vf">
+                <label class="prueba-opcion"><input type="radio" name="p2i1" value="a"><span>a) Literaria / poética.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i1" value="b"><span>b) Apelativa.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i1" value="c"><span>c) Informativa o referencial.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- P2.2 Clase de texto -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>2 · Clase de texto</h2>
+              <span class="prueba-pts">1 pregunta · 2 puntos</span>
+            </div>
+            <p class="prueba-enunciado">La clase de texto es:</p>
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="d" data-puntos="2">
+              <div class="prueba-opciones prueba-vf">
+                <label class="prueba-opcion"><input type="radio" name="p2i2" value="a"><span>a) Cuento.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i2" value="b"><span>b) Informe.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i2" value="c"><span>c) Entrevista.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i2" value="d"><span>d) Noticia.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- P2.3 Tiempos verbales -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>3 · Tiempos verbales</h2>
+              <span class="prueba-pts">3 espacios · 6 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Transcribí del siguiente fragmento los verbos cuyos tiempos verbales se piden.</p>
+            <p class="prueba-quote">«<strong>Actualmente estamos</strong> en la primera fase de prueba, para la segunda etapa de prueba <strong>hemos pedido</strong> diez gafas de realidad virtual más. Si tenemos éxito con estas, <strong>pediremos</strong> gafas protectoras para todo nuestro rebaño». Koçak <strong>dijo</strong> que continúa pasándole música a las vacas para que estén más relajadas.»</p>
+            <p class="prueba-texto-completar">Futuro imperfecto: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="pediremos" data-accept="pediremos" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Futuro imperfecto"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Pretérito perfecto compuesto: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="hemos pedido" data-accept="hemos pedido|pedido" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Pretérito perfecto compuesto"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Pretérito perfecto simple: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="dijo" data-accept="dijo" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Pretérito perfecto simple"><span class="prueba-feedback-inline" hidden></span></span></p>
+          </section>
+
+          <!-- P2.4 Adjetivos -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>4 · Adjetivos</h2>
+              <span class="prueba-pts">5 espacios · 10 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Completá el cuadro con un ejemplo de cada clase de adjetivo que aparece en el fragmento.</p>
+            <p class="prueba-quote">«Obtenemos una media de <strong>veintidós</strong> litros de leche al día de <strong>nuestras</strong> vacas», dijo Koçak a la Agencia de Noticias <strong>turca</strong> Anadolu. «Hicimos que dos de nuestras vacas usaran lentes de realidad virtual y observaran un extenso pasto <strong>verde</strong> todo el día, y la producción diaria de leche aumentó hasta veintisiete litros». «<strong>Estas</strong> gafas son emocionalmente buenas para los animales, notamos que están menos estresados.»</p>
+            <p class="prueba-texto-completar">Posesivo: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="nuestras" data-accept="nuestras|nuestra|nuestro|nuestros" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Adjetivo posesivo"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Numeral cardinal: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="veintidós" data-accept="veintidos|veintidós|veintisiete|dos" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Adjetivo numeral cardinal"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Demostrativo: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="Estas" data-accept="estas|esta|este|estos|esos" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Adjetivo demostrativo"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Calificativo: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="verde" data-accept="verde|buenas|extenso|estresados|cremosa|soleado" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Adjetivo calificativo"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Gentilicio: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="turca" data-accept="turca|turco" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Adjetivo gentilicio"><span class="prueba-feedback-inline" hidden></span></span></p>
+          </section>
+
+          <!-- P2.5 Acentuación -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>5 · Acentuación</h2>
+              <span class="prueba-pts">8 palabras · 8 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Clasificá según su acentuación las palabras extraídas del texto. Elegí la columna que corresponda.</p>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="at" data-puntos="1">
+              <p class="prueba-num"><span>veintidós</span></p>
+              <select class="prueba-select" aria-label="Acentuación de veintidós">
+                <option value="">Elegí una opción…</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="e">Esdrújula</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="m">Monosílabo sin tilde</option>
+                <option value="h">Hiato</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="g" data-puntos="1">
+              <p class="prueba-num"><span>leche</span></p>
+              <select class="prueba-select" aria-label="Acentuación de leche">
+                <option value="">Elegí una opción…</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="e">Esdrújula</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="m">Monosílabo sin tilde</option>
+                <option value="h">Hiato</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="e" data-puntos="1">
+              <p class="prueba-num"><span>inédita</span></p>
+              <select class="prueba-select" aria-label="Acentuación de inédita">
+                <option value="">Elegí una opción…</option>
+                <option value="e">Esdrújula</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="m">Monosílabo sin tilde</option>
+                <option value="h">Hiato</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="h" data-puntos="1">
+              <p class="prueba-num"><span>día</span></p>
+              <select class="prueba-select" aria-label="Acentuación de día">
+                <option value="">Elegí una opción…</option>
+                <option value="h">Hiato</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="e">Esdrújula</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="m">Monosílabo sin tilde</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="a" data-puntos="1">
+              <p class="prueba-num"><span>realidad</span></p>
+              <select class="prueba-select" aria-label="Acentuación de realidad">
+                <option value="">Elegí una opción…</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="e">Esdrújula</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="m">Monosílabo sin tilde</option>
+                <option value="h">Hiato</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="m" data-puntos="1">
+              <p class="prueba-num"><span>si</span></p>
+              <select class="prueba-select" aria-label="Acentuación de si">
+                <option value="">Elegí una opción…</option>
+                <option value="m">Monosílabo sin tilde</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="e">Esdrújula</option>
+                <option value="h">Hiato</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="at" data-puntos="1">
+              <p class="prueba-num"><span>original</span></p>
+              <select class="prueba-select" aria-label="Acentuación de original">
+                <option value="">Elegí una opción…</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="e">Esdrújula</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="m">Monosílabo sin tilde</option>
+                <option value="h">Hiato</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="mt" data-puntos="1">
+              <p class="prueba-num"><span>sí</span></p>
+              <select class="prueba-select" aria-label="Acentuación de sí">
+                <option value="">Elegí una opción…</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="m">Monosílabo sin tilde</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="e">Esdrújula</option>
+                <option value="h">Hiato</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- P2.6 Clases de palabras -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>6 · Clases de palabras</h2>
+              <span class="prueba-pts">6 ítems · 6 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Extraé del fragmento un ejemplo de cada clase de palabra solicitada.</p>
+            <p class="prueba-quote">«<strong>Actualmente</strong> estamos en la primera fase de prueba, para la <strong>segunda</strong> etapa de prueba hemos pedido diez gafas de realidad virtual más. Si tenemos éxito con <strong>estas</strong>, pediremos gafas protectoras para todo nuestro <strong>rebaño</strong>.»</p>
+            <p class="prueba-texto-completar">Sustantivo colectivo: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="rebaño" data-accept="rebaño|rebano" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Sustantivo colectivo"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Sustantivo común: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="fase" data-accept="fase|etapa|prueba|gafas|realidad|virtual|exito|éxito" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Sustantivo común"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Artículo: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="la" data-accept="la|las|el|los|un|una" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Artículo"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Pronombre: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="estas" data-accept="estas|esta|este|estos|que" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Pronombre"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Adjetivo numeral ordinal: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="segunda" data-accept="segunda|segundo" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Adjetivo numeral ordinal"><span class="prueba-feedback-inline" hidden></span></span></p>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="a" data-puntos="1">
+              <p class="prueba-num">Oración unimembre: ¿Cuál de las siguientes es una oración unimembre (nominal) del texto?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p2i6" value="a"><span>a) «Las vacas con las gafas de realidad virtual» (el titular).</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i6" value="b"><span>b) «Hicimos que dos de nuestras vacas usaran lentes de realidad virtual».</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i6" value="c"><span>c) «La producción diaria de leche aumentó hasta veintisiete litros».</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i6" value="d"><span>d) «Koçak dijo que continúa pasándole música a las vacas».</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- P2.7 Entrevista y paratextos -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>7 · Entrevista y paratextos</h2>
+              <span class="prueba-pts">3 ítems · 16 puntos</span>
+            </div>
+            <p class="prueba-enunciado">La página presenta la entrevista al granjero turco İzzet Koçak. Respondé según el texto.</p>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="a" data-puntos="4">
+              <p class="prueba-num"><span>a</span> «Las vacas con las gafas de realidad virtual» es:</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p2i7a" value="a"><span>a) El título.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7a" value="b"><span>b) La bajada.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7a" value="c"><span>c) El cuerpo de la nota.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7a" value="d"><span>d) La firma.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="b" data-puntos="4">
+              <p class="prueba-num"><span>b</span> «Un granjero turco ideó una manera original de aumentar la producción de leche de sus vacas; y dice que le funciona» es:</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p2i7b" value="a"><span>a) El título.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7b" value="b"><span>b) La bajada.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7b" value="c"><span>c) Un epígrafe.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7b" value="d"><span>d) La despedida.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="c" data-puntos="8">
+              <p class="prueba-num"><span>c</span> En la entrevista falta una pregunta del entrevistador. ¿Cuál puede ser, según la respuesta que le sigue («Actualmente estamos en la primera fase de prueba… hemos pedido diez gafas más»)?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p2i7c" value="a"><span>a) ¿Cuántas vacas tiene en total?</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7c" value="b"><span>b) ¿De qué país sos?</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7c" value="c"><span>c) ¿En qué fase de prueba se encuentra y qué han pedido para la siguiente etapa?</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7c" value="d"><span>d) ¿Cómo se llama tu granja?</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+        </form>
+
+        <!-- ======= Acciones y resultado ======= -->
+        <div class="prueba-acciones">
+          <button type="button" class="btn" id="btn-corregir">Corregir prueba <i class="bx bx-check-double"></i></button>
+          <button type="button" class="btn btn-reintentar" id="btn-reintentar" hidden>Reintentar <i class="bx bx-refresh"></i></button>
+          <button type="button" class="btn btn-imprimir" id="btn-imprimir">Imprimir <i class="bx bx-printer"></i></button>
+        </div>
+
+        <div class="prueba-resultado" id="resultado" hidden>
+          <i class="bx bx-trophy resultado-icono"></i>
+          <h2 id="resultado-puntaje">0 / 100 puntos</h2>
+          <p id="resultado-mensaje"></p>
+          <p class="resultado-detalle" id="resultado-detalle"></p>
+        </div>
+
+        <p class="prueba-nota"><i class="bx bx-info-circle"></i> Esta versión online adapta la prueba original a un formato interactivo: el dictado se practica con texto de ejemplo, las respuestas abiertas se convirtieron en opciones o espacios con respuestas válidas múltiples, y la producción escrita de la entrevista se trabaja en clase. <a href="material/lengua/LenguaBelgrano2025.pdf" target="_blank" rel="noopener">Descargá el PDF oficial de la prueba</a> para resolverla en papel. ¿Querés más práctica? Hacé la <a href="prueba-lengua-2.html">Prueba 2</a>, con dos textos nuevos y las mismas consignas.</p>
+
+      </div>
+    </section>
+
+    <!-- ======= CTA ======= -->
+    <section class="landing-cta">
+      <div class="container text-center">
+        <h2>¿Querés llegar listo al ingreso?</h2>
+        <p>Trabajamos juntos los contenidos de esta prueba y muchos más, a tu ritmo.</p>
+        <div class="cta-actions">
+          <a href="contacto.html" class="btn">Escribime por el formulario</a>
+          <a href="https://forms.gle/CwjkYQFUxCRkphSv6" class="btn-form" target="_blank" rel="noopener">Quiero más información <i class="bx bx-right-arrow-alt"></i></a>
+          <a href="https://wa.link/uoq4f1" class="btn-wa" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </section><!-- End CTA -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container"><div class="credits">Diseñado por <a href="https://www.carlosreges.com.ar/">Carlos Reges</a></div></div>
+  </footer>
+  <a href="https://wa.link/uoq4f1" class="float-wa" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"><i class="fa-brands fa-whatsapp" style="margin-top:16px;"></i></a>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/color-modes.js"></script>
+  <script src="assets/js/prueba-lengua.js"></script>
+</body>
+
+</html>

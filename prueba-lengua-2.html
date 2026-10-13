@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Simulacro de Ingreso Belgrano 2025 · Lengua y Literatura (Prueba 2) | Prof. Carlos Reges</title>
+  <meta name="description" content="Segunda versión del simulacro de Lengua de la Prueba de Ingreso Belgrano: un cuento y una noticia nuevos, con las mismas consignas de la prueba original. Dictado, comprensión lectora, secuencia, figuras literarias, conectores, gramática y más. Con cronómetro y corrección automática.">
+  <meta name="author" content="Carlos Reges">
+  <link rel="canonical" href="https://www.carlosreges.com.ar/prueba-lengua-2.html">
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/favicon.ico" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Quiz",
+    "name": "Simulacro de Ingreso Belgrano 2025 - Lengua y Literatura (Prueba 2)",
+    "url": "https://www.carlosreges.com.ar/prueba-lengua-2.html",
+    "inLanguage": "es-AR",
+    "educationalLevel": "Ingreso universitario",
+    "about": "Segunda versión del simulacro de Lengua de la Prueba de Ingreso 2025 de la Escuela Superior de Comercio Manuel Belgrano (UNC), con textos y consignas nuevos",
+    "author": { "@type": "Person", "name": "Carlos Reges", "jobTitle": "Licenciado en Educación Integral" }
+  }
+  </script>
+</head>
+
+<body class="prueba-page">
+
+  <header id="header">
+    <div class="container-fluid">
+      <div class="logo"><a href="index.html"><img src="assets/img/logoCR.png" alt="Prof. Carlos Reges" class="img-fluid"></a></div>
+      <button type="button" class="nav-toggle" aria-label="Abrir menú"><i class="bx bx-menu"></i></button>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Principal</a></li>
+          <li><a href="aboutMe.html">Sobre mí</a></li>
+          <li><a href="index.html#why-us">¿Qué hago y cómo?</a></li>
+          <li><a href="blog.html">Blog del profesor</a></li>
+          <li><a href="clases.html">Material de Estudio</a></li>
+          <li class="active"><a href="prueba-lengua.html">Simulacro de Lengua</a></li>
+          <li><a href="contacto.html">Formulario de contacto</a></li>
+          <li><button type="button" class="theme-toggle" aria-label="Activar modo oscuro" aria-pressed="false"><i class="bx bx-moon"></i></button></li>
+          <li><a href="contacto.html"><b>Contáctame</b></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======= Encabezado de la prueba ======= -->
+    <section class="prueba-hero">
+      <div class="container">
+        <p class="hero-kicker">SIMULACRO · PRUEBA DE INGRESO · ESCUELA SUPERIOR DE COMERCIO MANUEL BELGRANO 2025</p>
+        <h1>Simulacro de Lengua<br>y Literatura <span class="prueba-badge">Prueba 2</span></h1>
+        <nav class="prueba-switch" aria-label="Elegir simulacro">
+          <a href="prueba-lengua.html">Prueba 1</a>
+          <a href="prueba-lengua-2.html" class="activo" aria-current="page">Prueba 2</a>
+        </nav>
+        <p class="prueba-lead">Una segunda tanda de práctica con las <strong>mismas consignas</strong> de la prueba de ingreso de Belgrano (UNC) pero con <strong>dos textos nuevos</strong>: un cuento y una noticia originales. Dos partes de 50 puntos, cronómetro de 90 minutos y corrección automática con cada respuesta correcta.</p>
+        <ul class="prueba-instrucciones">
+          <li><i class="bx bx-time"></i> Tenés <strong>90 minutos</strong>. El cronómetro empieza al cargar la página; al llegar a cero se corrige sola.</li>
+          <li><i class="bx bx-list-check"></i> Parte I: dictado, comprensión del cuento, secuencia, figuras literarias, conectores, mayúsculas y puntuación. Parte II: noticia, gramática y entrevista.</li>
+          <li><i class="bx bx-refresh"></i> Podés revisar todo antes de tocar «Corregir». Después, reintentar las veces que quieras o imprimir la prueba.</li>
+          <li><i class="bx bx-book-content"></i> Los textos de esta versión son originales, escritos para la práctica online; la estructura, los puntajes y las consignas replican la <a href="prueba-lengua.html">Prueba 1</a> y la prueba oficial.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="prueba-wrap">
+      <div class="container">
+
+        <!-- Barra de estado: cronómetro + progreso + puntaje -->
+        <div class="prueba-estado">
+          <div class="prueba-tiempo" id="caja-tiempo"><i class="bx bx-time"></i> <span id="tiempo">90:00</span></div>
+          <div class="prueba-progreso">Respondidas: <strong id="progreso">0 / 57</strong></div>
+          <div class="prueba-puntaje" id="caja-puntaje" hidden><i class="bx bx-trophy"></i> <span id="puntaje"></span></div>
+        </div>
+
+        <form id="form-prueba" novalidate>
+          <!-- PARTE I -->
+          <div class="prueba-parte">
+            <h2 class="prueba-parte-titulo">Parte I <span>· 50 puntos</span></h2>
+          </div>
+
+          <!-- 1. Dictado -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>1 · Dictado</h2>
+              <span class="prueba-pts">5 espacios · 5 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Parte I, ejercicio 1. Completá el dictado con las palabras del banco. <em>(Dictado de práctica con texto original de este simulacro: el dictado de la prueba real se transcribe escuchando en el aula.)</em></p>
+            <div class="prueba-banco">
+              <strong>Banco de palabras:</strong>
+              <span>vecinos</span><span>juguetes</span><span>prestados</span><span>barrio</span><span>acercaron</span>
+            </div>
+            <p class="prueba-texto-completar">En el <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="vecinos" data-accept="vecinos|vecino" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Dictado espacio 1"><span class="prueba-feedback-inline" hidden></span></span> Güemes, una vieja casa se volvió una biblioteca donde los <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="juguetes" data-accept="juguetes|juguete" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Dictado espacio 2"><span class="prueba-feedback-inline" hidden></span></span> eran <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="prestados" data-accept="prestados|prestado" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Dictado espacio 3"><span class="prueba-feedback-inline" hidden></span></span> por sorteo. Muchas familias del <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="barrio" data-accept="barrio" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Dictado espacio 4"><span class="prueba-feedback-inline" hidden></span></span> se <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="acercaron" data-accept="acercaron|acercó|acercó" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Dictado espacio 5"><span class="prueba-feedback-inline" hidden></span></span> a donar lo que ya no usaban.</p>
+          </section>
+
+          <!-- Texto base: cuento -->
+          <article class="prueba-card prueba-texto-card">
+            <div class="prueba-card-head">
+              <h2>Texto: «El robot de la señora Rosa»</h2>
+              <span class="prueba-pts">texto original de este simulacro · leelo con atención</span>
+            </div>
+            <div class="prueba-texto">
+              <p>La señora Rosa vive en una casa de persianas celestes, en un barrio de calles tranquilas. Desde que enviudó, las tardes se le hacían largas como una calle sin faroles. Hasta que un jueves apareció Bit, un robot pequeño que la empresa NovaBot (NB) había dejado «en prueba» para que le hiciera compañía.</p>
+              <p>Al principio, Rosa se enojó. «Yo no necesito máquinas metidas en mi cocina», rezongaba mientras Bit ordenaba las cucharitas, tarareaba canciones antiguas y leía las cartas del correo con una voz de terciopelo. Pero Bit tenía memoria de loro: le recordaba que regara las plantas, le avisaba cuando hervía el agua y guardaba las recetas en su disco duro.</p>
+              <p>Con el correr de las semanas, Rosa se encariñó. Empezó a prepararle el desayuno, a contarle sus recuerdos de juventud y a llevarlo al jardín para que «viera» cómo crecían los tomates. Bit, por su parte, registraba todo: guardaba las historias de Rosa y se las devolvía en los días tristes, cuando ella volvía de la plaza con el paso cansado.</p>
+              <p>Un día, la empresa avisó que la prueba había terminado y que pasarían a retirar a Bit. Rosa sintió que le arrancaban una página del calendario. Se sentó en el umbral con Bit entre las manos y se quedó callada, mientras el cielo se teñía de violeta, como si el atardecer también se pusiera triste.</p>
+              <p>Fue entonces cuando los vecinos, que habían visto pasar el camión blanco, empezaron a acercarse uno a uno. Primero llegó doña Etelvina con una torta; después, los chicos del potrero con dibujos; más tarde, el almacenero con una bolsa de caramelos. Cada uno dejaba algo en la puerta y se quedaba un rato a conversar. Pronto la vereda se llenó de gente, de sillas y de risas.</p>
+              <p>El técnico de la empresa, que miraba la escena desde el portón, no se animó a llevarse a Bit. «Señora, esto parece un abrazo de todo el barrio», dijo mientras anotaba algo en su tableta. Y así el vecindario, con esa astucia de los que se quieren de verdad, convenció a la empresa de adoptarlo entre todos, pagando una cuota mensual como quien junta para el asado del domingo.</p>
+              <p>Desde entonces, Bit sigue en la casa de las persianas celestes. A veces acompaña a Rosa a la plaza y oye los cuentos que ella les inventa a los chicos. Porque Rosa descubrió que la tecnología sí sirve cuando abraza, y que un robot, además, puede guardar secretos: los guarda como un corazón de lata lleno de luz.</p>
+            </div>
+            <p class="prueba-glosario"><strong>Glosario:</strong> bit: la mínima unidad de información; en inglés informal, «poquito». · potrero: terreno vacío donde juegan los chicos.</p>
+          </article>
+          <!-- 2. Respondé -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>2 · Respondé</h2>
+              <span class="prueba-pts">3 preguntas · 6 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Respondé según el cuento. <em>(En el examen real se responden a mano; acá se elige la opción correcta para la autocorrección.)</em></p>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="a" data-puntos="2">
+              <p class="prueba-num"><span>a</span> ¿Qué trama textual predomina en el cuento?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p2a" value="a"><span>a) Narrativa.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2a" value="b"><span>b) Descriptiva.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2a" value="c"><span>c) Expositiva.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2a" value="d"><span>d) Argumentativa.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="a" data-puntos="2">
+              <p class="prueba-num"><span>b</span> ¿Qué función del lenguaje predomina en el cuento?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p2b" value="a"><span>a) Literaria / poética.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2b" value="b"><span>b) Referencial o informativa.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2b" value="c"><span>c) Apelativa.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2b" value="d"><span>d) Metalingüística.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="c" data-puntos="2">
+              <p class="prueba-num"><span>c</span> El texto que leíste es:</p>
+              <div class="prueba-opciones prueba-vf">
+                <label class="prueba-opcion"><input type="radio" name="p2c" value="a"><span>a) Fábula.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2c" value="b"><span>b) Leyenda.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2c" value="c"><span>c) Cuento.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- 3. Marcá la opción correcta -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>3 · Marcá la opción correcta</h2>
+              <span class="prueba-pts">4 preguntas · 7 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Elegí la opción que más se ajuste al contenido del texto.</p>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="a" data-puntos="2">
+              <p class="prueba-num"><span>a</span> ¿Qué consecuencias tuvo que Rosa se encariñara con Bit?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p3a" value="a"><span>a) Que empezara a prepararle el desayuno y a llevarlo al jardín para que «viera» los tomates.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3a" value="b"><span>b) Que pidiera a la empresa que se llevara a Bit cuanto antes.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3a" value="c"><span>c) Que le enseñara a Bit a ordenar las cucharitas de la cocina.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3a" value="d"><span>d) Que le regalara un disco duro nuevo para guardar recetas.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="d" data-puntos="2">
+              <p class="prueba-num"><span>b</span> ¿Cuál fue la reacción de los vecinos cuando la empresa fue a retirar a Bit?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p3b" value="a"><span>a) Se enojaron con Rosa por haber aceptado el robot.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3b" value="b"><span>b) Se quedaron mirando sin acercarse a la casa.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3b" value="c"><span>c) Llamaron a la empresa para pedir otro robot.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3b" value="d"><span>d) Se acercaron con regalos y convencieron a la empresa de adoptarlo entre todos.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="b" data-puntos="2">
+              <p class="prueba-num"><span>c</span> ¿Por qué al final se dice que Bit guarda los secretos «como un corazón de lata lleno de luz»?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p3c" value="a"><span>a) Porque tiene una batería que nunca se agota.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3c" value="b"><span>b) Porque guarda con cariño las historias y los recuerdos de Rosa y se los devuelve.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3c" value="c"><span>c) Porque enciende una luz cada vez que Rosa le habla.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3c" value="d"><span>d) Porque ordena las cartas del correo en su disco duro.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="a" data-puntos="1">
+              <p class="prueba-num"><span>d</span> ¿Cómo es la señora Rosa?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p3d" value="a"><span>a) Desconfiada al principio, pero cariñosa y agradecida.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3d" value="b"><span>b) Enojada y desagradecida durante todo el cuento.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3d" value="c"><span>c) Indiferente, no le importan las máquinas.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p3d" value="d"><span>d) Orgullosa y distante con sus vecinos.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- 4. Ordenar secuencias -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>4 · Ordená las secuencias del texto</h2>
+              <span class="prueba-pts">9 fragmentos · 9 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Ordená los hechos del cuento de arriba hacia abajo (el primero arriba). Usá las flechas o arrastrá cada fragmento.</p>
+            <ol class="prueba-orden" id="orden-seq" data-puntos-item="1">
+              <li class="prueba-orden-item" data-id="3" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">Rosa deja de enojarse y se encariña con Bit.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="5" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">Los vecinos se acercan con regalos a la casa.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="8" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">Bit acompaña a Rosa a la plaza y oye sus cuentos.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="1" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">La empresa deja a Bit «en prueba» en casa de Rosa.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="6" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">El técnico no se anima a llevarse a Bit.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="2" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">Al principio, Rosa se enoja con la máquina.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="7" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">El vecindario adopta a Bit pagando una cuota.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="4" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">La empresa avisa que la prueba terminó y vendrá a buscarlo.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+              <li class="prueba-orden-item" data-id="9" draggable="true">
+                <span class="orden-num"></span>
+                <span class="orden-txt">Rosa descubre que la tecnología sirve cuando abraza.</span>
+                <span class="orden-ctrl"><button type="button" class="orden-btn" data-dir="up" aria-label="Subir fragmento"><i class="bx bx-up-arrow-alt"></i></button><button type="button" class="orden-btn" data-dir="down" aria-label="Bajar fragmento"><i class="bx bx-down-arrow-alt"></i></button></span>
+              </li>
+            </ol>
+            <p class="prueba-feedback" id="feedback-orden" hidden></p>
+          </section>
+
+          <!-- 5. Recursos literarios -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>5 · Recursos literarios</h2>
+              <span class="prueba-pts">2 espacios · 4 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Escribí el nombre del recurso poético o literario que reconocés en cada fragmento. Se aceptan sinónimos y variantes.</p>
+            <p class="prueba-texto-completar">«las tardes se le hacían largas como una calle sin faroles»: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="símil" data-accept="símil|simil|comparación|comparacion" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Recurso literario 1"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">«Bit tenía memoria de loro» y «leía las cartas… con una voz de terciopelo»: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="metáfora" data-accept="metáfora|metafora|imagen" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Recurso literario 2"><span class="prueba-feedback-inline" hidden></span></span></p>
+          </section>
+
+          <!-- 6. Referencias -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>6 · Referencias</h2>
+              <span class="prueba-pts">4 espacios · 8 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Indicá a qué o a quién se refiere la palabra en negrita en cada fragmento.</p>
+            <p class="prueba-texto-completar">a. «Hasta que un jueves apareció Bit… para que <strong>le</strong> hiciera compañía»: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="a Rosa" data-accept="a rosa|rosa|la señora rosa|a la señora rosa" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Referencia a"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">b. «guardaba las historias de Rosa y <strong>se las</strong> devolvía en los días tristes»: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="las historias" data-accept="las historias|las historias de rosa|se las devolvía a rosa|a rosa" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Referencia b"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">c. «El técnico de la empresa… no se animó a llevarse a Bit… Y así el vecindario… convenció a la empresa de adoptar<strong>lo</strong> entre todos»: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="a Bit" data-accept="a bit|bit|al robot|a bit el robot|al robot bit" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Referencia c"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">d. «A veces acompaña a Rosa a la plaza y oye <strong>los</strong> cuentos que ella les inventa a los chicos»: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="los cuentos" data-accept="los cuentos|los cuentos que ella les inventa|cuentos" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Referencia d"><span class="prueba-feedback-inline" hidden></span></span></p>
+          </section>
+
+          <!-- 7. Conectores -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>7 · Conectores</h2>
+              <span class="prueba-pts">4 conectores · 4 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Clasificá cada conector extraído del texto en la categoría que corresponde.</p>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="o" data-puntos="1">
+              <p class="prueba-num"><span>Pero</span></p>
+              <select class="prueba-select" aria-label="Clasificación del conector Pero">
+                <option value="">Elegí una opción…</option>
+                <option value="o">Conector de oposición</option>
+                <option value="t">Conector de tiempo</option>
+                <option value="c">Conector de causa</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="t" data-puntos="1">
+              <p class="prueba-num"><span>mientras</span></p>
+              <select class="prueba-select" aria-label="Clasificación del conector mientras">
+                <option value="">Elegí una opción…</option>
+                <option value="t">Conector de tiempo</option>
+                <option value="c">Conector de causa</option>
+                <option value="o">Conector de oposición</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="c" data-puntos="1">
+              <p class="prueba-num"><span>porque</span></p>
+              <select class="prueba-select" aria-label="Clasificación del conector porque">
+                <option value="">Elegí una opción…</option>
+                <option value="c">Conector de causa</option>
+                <option value="t">Conector de tiempo</option>
+                <option value="o">Conector de oposición</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="t" data-puntos="1">
+              <p class="prueba-num"><span>Hasta que</span></p>
+              <select class="prueba-select" aria-label="Clasificación del conector Hasta que">
+                <option value="">Elegí una opción…</option>
+                <option value="t">Conector de tiempo</option>
+                <option value="c">Conector de causa</option>
+                <option value="o">Conector de oposición</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- 8. Mayúsculas -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>8 · Uso de mayúsculas</h2>
+              <span class="prueba-pts">4 espacios · 4 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Transcribí del siguiente fragmento un ejemplo de cada uso de la mayúscula.</p>
+            <p class="prueba-quote">«Hasta que un jueves apareció Bit, un robot pequeño que la empresa <strong>NovaBot</strong> (<strong>NB</strong>) había dejado “en prueba” para que le hiciera compañía.»</p>
+            <p class="prueba-texto-completar">Nombre propio: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="Bit" data-accept="bit" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Nombre propio"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Nombre de institución o marca: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="NovaBot" data-accept="novabot" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Nombre de institución"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Siglas: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="NB" data-accept="nb" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Siglas"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Comienzo de oración: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="Hasta" data-accept="hasta" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Comienzo de oración"><span class="prueba-feedback-inline" hidden></span></span></p>
+          </section>
+
+          <!-- 9. Puntuación -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>9 · Signos de puntuación</h2>
+              <span class="prueba-pts">3 preguntas · 3 puntos</span>
+            </div>
+            <p class="prueba-enunciado">¿Por qué se usaron los siguientes signos de puntuación en el texto? Elegí la opción correcta.</p>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="b" data-puntos="1">
+              <p class="prueba-num"><span>a</span> «Bit tenía memoria de loro<b>:</b> le recordaba que regara las plantas…». En el fragmento anterior se usaron los dos puntos:</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p9a" value="a"><span>a) Para separar párrafos.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p9a" value="b"><span>b) Para introducir una explicación.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p9a" value="c"><span>c) Para marcar la intervención del narrador.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="c" data-puntos="1">
+              <p class="prueba-num"><span>b</span> «Primero llegó doña Etelvina con una torta<b>;</b> después, los chicos del potrero con dibujos<b>;</b> más tarde, el almacenero». En el fragmento anterior se usaron los punto y coma:</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p9b" value="a"><span>a) Para realizar una aclaración.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p9b" value="b"><span>b) Para destacar una idea.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p9b" value="c"><span>c) Para separar los elementos de una enumeración que ya lleva comas.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="a" data-puntos="1">
+              <p class="prueba-num"><span>c</span> «“Yo no necesito máquinas metidas en mi cocina”<b>,</b> rezongaba…». En el fragmento anterior se usaron las comillas:</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p9c" value="a"><span>a) Para reproducir lo que dice un personaje (cita).</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p9c" value="b"><span>b) Para introducir una enumeración.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p9c" value="c"><span>c) Para señalar una ironía del narrador.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- PARTE II -->
+          <div class="prueba-parte">
+            <h2 class="prueba-parte-titulo">Parte II <span>· 50 puntos</span></h2>
+          </div>
+
+          <!-- Texto base: noticia -->
+          <article class="prueba-card prueba-texto-card">
+            <div class="prueba-card-head">
+              <h2>Texto: «La biblioteca de juguetes del barrio Güemes»</h2>
+              <span class="prueba-pts">texto original de este simulacro · leelo con atención</span>
+            </div>
+            <div class="prueba-texto">
+              <p>Córdoba. Un grupo de vecinos del barrio Güemes convirtió una casa antigua en una biblioteca de juguetes donde los chicos piden prestado un juego por semana; y dicen que la idea les cambió las tardes a varias familias.</p>
+              <p>Ana Ferreyra no es una improvisada: organiza el espacio desde hace cinco años junto a otras madres del barrio. «Nuestro proyecto ha durado tanto tiempo porque siempre hemos trabajado con lo que teníamos a mano», explica.</p>
+              <p>Su apuesta es por el préstamo en lugar de la compra. Lo de los juguetes no fue su primera propuesta. Al principio, intentaron una feria de trueque, pero la idea no funcionó como esperaban, aunque notaron que las familias se acercaban igualmente.</p>
+              <p>«Actualmente tenemos doscientas familias anotadas y cada una retira un juguete por semana. Hemos pedido un subsidio al municipio y, si nos lo aprueban, abriremos una segunda sede el año que viene», contó Ana a La Voz del Interior. Además, lleva un registro en una libreta para saber qué juguete está en cada casa.</p>
+              <p>Ferreyra dijo que se inspiró en unas jugueterías solidarias que leyó por internet. Le interesó la propuesta, así que se puso en contacto con una de las coordinadoras y le pidió los formularios. Ahora que comprobó que el préstamo funciona, planea sumar más barrios y, si la demanda crece de la misma manera, quiere habilitar una red de bibliotecas en toda la zona sur.</p>
+              <p>«La primera casa la alquilamos gracias a un bono que nos dio el centro vecinal», contó Ferreyra. «Decidimos empezar de a poco. Por ahora, la usamos doscientas familias y observamos que casi no hay juguetes rotos que faltara reponer». Ahora, la organización reparte turnos por WhatsApp y cada devolución se cambia por otro juguete.</p>
+              <p>«Recibimos una media de ciento cincuenta juguetes por mes de nuestos vecinos», dijo Ferreyra. «Muchas familias donan lo que sus hijos ya no usan y los juguetes quedan como nuevos». «Estas donaciones son buenas para todos: los chicos estrenan juego y las familias ahorran», agregó.</p>
+            </div>
+          </article>
+
+          <!-- P2.1 Función del lenguaje -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>1 · Función del lenguaje</h2>
+              <span class="prueba-pts">1 pregunta · 2 puntos</span>
+            </div>
+            <p class="prueba-enunciado">¿Cuál es la función del lenguaje que predomina en el texto? Elegí la opción correcta.</p>
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="c" data-puntos="2">
+              <div class="prueba-opciones prueba-vf">
+                <label class="prueba-opcion"><input type="radio" name="p2i1" value="a"><span>a) Literaria / poética.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i1" value="b"><span>b) Apelativa.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i1" value="c"><span>c) Informativa o referencial.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- P2.2 Clase de texto -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>2 · Clase de texto</h2>
+              <span class="prueba-pts">1 pregunta · 2 puntos</span>
+            </div>
+            <p class="prueba-enunciado">La clase de texto es:</p>
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="d" data-puntos="2">
+              <div class="prueba-opciones prueba-vf">
+                <label class="prueba-opcion"><input type="radio" name="p2i2" value="a"><span>a) Cuento.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i2" value="b"><span>b) Informe.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i2" value="c"><span>c) Entrevista.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i2" value="d"><span>d) Noticia.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- P2.3 Tiempos verbales -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>3 · Tiempos verbales</h2>
+              <span class="prueba-pts">3 espacios · 6 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Transcribí del siguiente fragmento los verbos cuyos tiempos verbales se piden.</p>
+            <p class="prueba-quote">«<strong>Hemos pedido</strong> un subsidio al municipio y, si nos lo aprueban, <strong>abriremos</strong> una segunda sede el año que viene», <strong>contó</strong> Ana a La Voz del Interior.»</p>
+            <p class="prueba-texto-completar">Futuro imperfecto: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="abriremos" data-accept="abriremos" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Futuro imperfecto"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Pretérito perfecto compuesto: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="hemos pedido" data-accept="hemos pedido|pedido" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Pretérito perfecto compuesto"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Pretérito perfecto simple: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="contó" data-accept="contó|conto" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Pretérito perfecto simple"><span class="prueba-feedback-inline" hidden></span></span></p>
+          </section>
+
+          <!-- P2.4 Adjetivos -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>4 · Adjetivos</h2>
+              <span class="prueba-pts">5 espacios · 10 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Completá el cuadro con un ejemplo de cada clase de adjetivo que aparece en el fragmento.</p>
+            <p class="prueba-quote">«Recibimos una media de ciento cincuenta juguetes por mes de <strong>nuestros</strong> vecinos», dijo Ferreyra. «Muchas familias donan lo que sus hijos ya no usan y los juguetes quedan como <strong>nuevos</strong>». «<strong>Estas</strong> donaciones son buenas para todos», agregó la organizadora <strong>cordobesa</strong>.</p>
+            <p class="prueba-texto-completar">Posesivo: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="nuestros" data-accept="nuestros|nuestro|nuestra|nuestras" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Adjetivo posesivo"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Numeral cardinal: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="cincuenta" data-accept="cincuenta|ciento cincuenta|ciento|doscientas|doscientos|una" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Adjetivo numeral cardinal"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Demostrativo: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="Estas" data-accept="estas|esta|este|estos|esas" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Adjetivo demostrativo"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Calificativo: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="nuevos" data-accept="nuevos|nuevo|nueva|buenas|buena" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Adjetivo calificativo"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Gentilicio: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="cordobesa" data-accept="cordobesa|cordobés|cordobes|cordobesas" data-puntos="2" autocomplete="off" spellcheck="false" aria-label="Adjetivo gentilicio"><span class="prueba-feedback-inline" hidden></span></span></p>
+          </section>
+
+          <!-- P2.5 Acentuación -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>5 · Acentuación</h2>
+              <span class="prueba-pts">8 palabras · 8 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Clasificá según su acentuación las palabras extraídas del texto. Elegí la opción que corresponda.</p>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="e" data-puntos="1">
+              <p class="prueba-num"><span>Córdoba</span></p>
+              <select class="prueba-select" aria-label="Acentuación de Córdoba">
+                <option value="">Elegí una opción…</option>
+                <option value="e">Esdrújula</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="m">Monosílabo sin tilde</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="at" data-puntos="1">
+              <p class="prueba-num"><span>más</span></p>
+              <select class="prueba-select" aria-label="Acentuación de más">
+                <option value="">Elegí una opción…</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="e">Esdrújula</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="m">Monosílabo sin tilde</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="g" data-puntos="1">
+              <p class="prueba-num"><span>biblioteca</span></p>
+              <select class="prueba-select" aria-label="Acentuación de biblioteca">
+                <option value="">Elegí una opción…</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="e">Esdrújula</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="m">Monosílabo sin tilde</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="a" data-puntos="1">
+              <p class="prueba-num"><span>WhatsApp</span></p>
+              <select class="prueba-select" aria-label="Acentuación de WhatsApp">
+                <option value="">Elegí una opción…</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="e">Esdrújula</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="m">Monosílabo sin tilde</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="m" data-puntos="1">
+              <p class="prueba-num"><span>si</span></p>
+              <select class="prueba-select" aria-label="Acentuación de si">
+                <option value="">Elegí una opción…</option>
+                <option value="m">Monosílabo sin tilde</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="e">Esdrújula</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="mt" data-puntos="1">
+              <p class="prueba-num"><span>qué</span></p>
+              <select class="prueba-select" aria-label="Acentuación de qué">
+                <option value="">Elegí una opción…</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="m">Monosílabo sin tilde</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="e">Esdrújula</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="at" data-puntos="1">
+              <p class="prueba-num"><span>además</span></p>
+              <select class="prueba-select" aria-label="Acentuación de además">
+                <option value="">Elegí una opción…</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="e">Esdrújula</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="m">Monosílabo sin tilde</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="relacion" data-respuesta="a" data-puntos="1">
+              <p class="prueba-num"><span>internet</span></p>
+              <select class="prueba-select" aria-label="Acentuación de internet">
+                <option value="">Elegí una opción…</option>
+                <option value="a">Aguda sin tilde</option>
+                <option value="at">Aguda con tilde</option>
+                <option value="g">Grave sin tilde</option>
+                <option value="e">Esdrújula</option>
+                <option value="mt">Monosílabo con tilde</option>
+                <option value="m">Monosílabo sin tilde</option>
+              </select>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- P2.6 Clases de palabras -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>6 · Clases de palabras</h2>
+              <span class="prueba-pts">6 ítems · 6 puntos</span>
+            </div>
+            <p class="prueba-enunciado">Extraé del fragmento un ejemplo de cada clase de palabra solicitada.</p>
+            <p class="prueba-quote">«Un <strong>grupo</strong> de vecinos del barrio Güemes convirtió una <strong>casa</strong> antigua en una biblioteca de juguetes. Lo de los juguetes no fue su <strong>primera</strong> propuesta. Si tenemos <strong>éxito</strong> con <strong>esta</strong> idea, abriremos más sedes.»</p>
+            <p class="prueba-texto-completar">Sustantivo colectivo: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="grupo" data-accept="grupo|vecindario|barrio" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Sustantivo colectivo"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Sustantivo común: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="casa" data-accept="casa|juguete|juguetes|biblioteca|éxito|exito|propuesta|idea|barrio" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Sustantivo común"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Artículo: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="una" data-accept="una|un|la|las|el|los" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Artículo"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Pronombre: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="esta" data-accept="esta|este|lo" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Pronombre"><span class="prueba-feedback-inline" hidden></span></span></p>
+            <p class="prueba-texto-completar">Adjetivo numeral ordinal: <span class="prueba-hueco"><input type="text" class="prueba-blank" data-answer="primera" data-accept="primera|primer|primero" data-puntos="1" autocomplete="off" spellcheck="false" aria-label="Adjetivo numeral ordinal"><span class="prueba-feedback-inline" hidden></span></span></p>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="a" data-puntos="1">
+              <p class="prueba-num">Oración unimembre: ¿Cuál de las siguientes es una oración unimembre (nominal) del texto?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p2i6" value="a"><span>a) «La biblioteca de juguetes del barrio Güemes» (el titular).</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i6" value="b"><span>b) «Un grupo de vecinos convirtió una casa antigua en una biblioteca».</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i6" value="c"><span>c) «Cada familia retira un juguete por semana».</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i6" value="d"><span>d) «Ferreyra contó que se inspiró en unas jugueterías solidarias».</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+          <!-- P2.7 Entrevista y paratextos -->
+          <section class="prueba-card">
+            <div class="prueba-card-head">
+              <h2>7 · Entrevista y paratextos</h2>
+              <span class="prueba-pts">3 ítems · 16 puntos</span>
+            </div>
+            <p class="prueba-enunciado">La página presenta el relato sobre la biblioteca de juguetes y las declaraciones de Ana Ferreyra. Respondé según el texto.</p>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="a" data-puntos="4">
+              <p class="prueba-num"><span>a</span> «La biblioteca de juguetes del barrio Güemes» es:</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p2i7a" value="a"><span>a) El título.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7a" value="b"><span>b) La bajada.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7a" value="c"><span>c) El cuerpo de la nota.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7a" value="d"><span>d) La firma.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="b" data-puntos="4">
+              <p class="prueba-num"><span>b</span> «Un grupo de vecinos convirtió una casa antigua en una biblioteca donde los chicos piden prestado un juego por semana; y dicen que les cambió las tardes a varias familias» es:</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p2i7b" value="a"><span>a) El título.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7b" value="b"><span>b) La bajada.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7b" value="c"><span>c) Un epígrafe.</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7b" value="d"><span>d) La despedida.</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+
+            <div class="prueba-pregunta" data-tipo="opcion" data-respuesta="c" data-puntos="8">
+              <p class="prueba-num"><span>c</span> En la entrevista falta una pregunta del entrevistador. ¿Cuál puede ser, según la respuesta que le sigue («Actualmente tenemos doscientas familias anotadas… Hemos pedido un subsidio… abriremos una segunda sede»)?</p>
+              <div class="prueba-opciones">
+                <label class="prueba-opcion"><input type="radio" name="p2i7c" value="a"><span>a) ¿Cuántos hermanos tiene tu familia?</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7c" value="b"><span>b) ¿En qué barrio vivís vos?</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7c" value="c"><span>c) ¿Cómo está funcionando hoy el proyecto y qué planes tienen a futuro?</span></label>
+                <label class="prueba-opcion"><input type="radio" name="p2i7c" value="d"><span>d) ¿Cuál es tu juguete favorito?</span></label>
+              </div>
+              <p class="prueba-feedback" hidden></p>
+            </div>
+          </section>
+
+        </form>
+
+        <!-- ======= Acciones y resultado ======= -->
+        <div class="prueba-acciones">
+          <button type="button" class="btn" id="btn-corregir">Corregir prueba <i class="bx bx-check-double"></i></button>
+          <button type="button" class="btn btn-reintentar" id="btn-reintentar" hidden>Reintentar <i class="bx bx-refresh"></i></button>
+          <button type="button" class="btn btn-imprimir" id="btn-imprimir">Imprimir <i class="bx bx-printer"></i></button>
+        </div>
+
+        <div class="prueba-resultado" id="resultado" hidden>
+          <i class="bx bx-trophy resultado-icono"></i>
+          <h2 id="resultado-puntaje">0 / 100 puntos</h2>
+          <p id="resultado-mensaje"></p>
+          <p class="resultado-detalle" id="resultado-detalle"></p>
+        </div>
+
+        <div class="prueba-otras-versiones">
+          <a href="prueba-lengua.html" class="btn btn-otra"><i class="bx bx-left-arrow-alt"></i> Ir a la Prueba 1</a>
+        </div>
+
+        <p class="prueba-nota"><i class="bx bx-info-circle"></i> Esta versión online es la <strong>Prueba 2</strong> del simulacro, con textos y consignas originales escritos para practicar. El dictado usa texto de ejemplo, las respuestas abiertas se resolvieron con opciones o espacios de respuestas válidas múltiples, y la producción escrita se trabaja en clase. También podés practicar con la <a href="prueba-lengua.html">Prueba 1</a>.</p>
+
+      </div>
+    </section>
+
+    <!-- ======= CTA ======= -->
+    <section class="landing-cta">
+      <div class="container text-center">
+        <h2>¿Querés llegar listo al ingreso?</h2>
+        <p>Trabajamos juntos los contenidos de estas pruebas y muchos más, a tu ritmo.</p>
+        <div class="cta-actions">
+          <a href="contacto.html" class="btn">Escribime por el formulario</a>
+          <a href="https://forms.gle/CwjkYQFUxCRkphSv6" class="btn-form" target="_blank" rel="noopener">Quiero más información <i class="bx bx-right-arrow-alt"></i></a>
+          <a href="https://wa.link/uoq4f1" class="btn-wa" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </section><!-- End CTA -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container"><div class="credits">Diseñado por <a href="https://www.carlosreges.com.ar/">Carlos Reges</a></div></div>
+  </footer>
+  <a href="https://wa.link/uoq4f1" class="float-wa" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"><i class="fa-brands fa-whatsapp" style="margin-top:16px;"></i></a>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/color-modes.js"></script>
+  <script src="assets/js/prueba-lengua.js"></script>
+</body>
+
+</html>
+
+
